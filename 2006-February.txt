@@ -1,0 +1,380 @@
+From michele.mattioni at poste.it  Wed Feb  1 00:22:25 2006
+From: michele.mattioni at poste.it (Michele)
+Date: Wed, 01 Feb 2006 00:22:25 +0100
+Subject: [Winefish-users] Testing mailman configuration... again :)
+Message-ID: <1138749745.8139.3.camel@localhost>
+
+Hi list.. we're getting mailman setting up in the right way maybe..
+
+Just testing. 
+
+Ignore this message :)
+
+thank you
+
+
+
+From kyanh at o2.pl  Wed Feb  1 00:26:49 2006
+From: kyanh at o2.pl (kyanh at o2.pl)
+Date: Wed, 01 Feb 2006 00:26:49 +0100
+Subject: [Winefish-users] =?iso-8859-2?Q?Re:_[Winefish-users]_Testing_mailman_configuration?=
+ =?iso-8859-2?Q?..._again_:)?=
+In-Reply-To: <1138749745.8139.3.camel@localhost>
+References: <1138749745.8139.3.camel@localhost>
+Message-ID: <20060131232649.910A154469@rekin18.go2.pl>
+
+> Hi list.. we're getting mailman setting up in the right way maybe..
+> 
+> Just testing. 
+> 
+> Ignore this message :)
+> 
+> thank you
+> 
+
+Thank Michele very much;)
+
+kyanh
+
+
+
+From michele.mattioni at poste.it  Wed Feb  1 01:25:13 2006
+From: michele.mattioni at poste.it (Michele)
+Date: Wed, 01 Feb 2006 01:25:13 +0100
+Subject: [Winefish-users] Re: [Winefish-users] Testing mailman
+	configuration... again :)
+In-Reply-To: <20060131232649.910A154469@rekin18.go2.pl>
+References: <1138749745.8139.3.camel@localhost>
+	 <20060131232649.910A154469@rekin18.go2.pl>
+Message-ID: <1138753513.8139.17.camel@localhost>
+
+Hi kyahn..
+the list is now well configured 
+[you've done everything right just the other day, but I didn't have the
+time to test it. :)]
+
+@list  
+what's new:
+
+now it is possible to answer to the mail, and all the list get this
+answer, not only to the mail author (hope this would be useful).
+
+winefish:
+
+I'm still not able to build the pre-last version (1.3.2.6e) of winefish,
+but it's a problem relative to my enviroment (maybe I have to change
+something to the ebuild... I've to look forward...), and the problem is
+not related to winefish itself.
+
+ASAP I resolve this trouble I post on the forum my impression :)
+I also see that there is a new release (1.3.2.6f) :) Maybe I'll try that
+one.
+
+Regards :)
+mattions
+
+
+
+
+
+
+
+From kyanh at o2.pl  Wed Feb  1 06:35:15 2006
+From: kyanh at o2.pl (kyanh at o2.pl)
+Date: Wed,  1 Feb 2006 06:35:15 +0100
+Subject: [Winefish-users] =?iso-8859-2?Q?Re:_Crash_in_Winefish?=
+In-Reply-To: <6c1435080601312057h7ba2011dg@mail.gmail.com>
+References: <6c1435080601270916r1ccc3e6en@mail.gmail.com>  <20060128024301.420704BDA2@rekin16.go2.pl> 
+	<6c1435080601312057h7ba2011dg@mail.gmail.com>
+Message-ID: <20060201053515.97C6D1C4002@rekin15.go2.pl>
+
+hi Bojaren
+
+> I'm using winefish with much fun.
+> Thanks for making this apps.:)
+> I had some troubles in 1.3.2.5,
+> but after using 1.3.2.6d almost perfect.
+> 
+
+Thank you for your very nice words;)
+
+> I have one question.
+> I can't see any icons in menus. It's listed in
+> only texts e.g File, Insert...
+> Had I miss some process or files when compiling?
+> The apps runs like silks, not icons.
+>
+You didn't make any mistakes.
+
+One of the ideas of Winefish 1.3.2 is KISS (Keep It Simple and
+Stupid ;)). I dropped almost icons. I mean Winefish is for
+experienced Users. I almost use HOTKEYS... so icons are useless ;)
+Maintaining icons is quite hard job (in my opinion -- as I am not a
+very good at graphics). Anyway, too much graphics makes Winefish
+slowdown ;)
+
+Some people has warned me this.... I think that I should support the
+options when configureinng... For further discussion please use
+
+* mailing list: winefish-users at lists.berliose.de
+* forum: http://winefish.berlios.de/forum
+
+Thanks again for your trying Winefish;)
+
+Regards,
+
+kyanh
+
+
+PS: there're already Winefish 1.3.2.6f with Template and Brace
+Finder Support. Winefish 1.3.2.6f may be the last step before
+1.3.2.6 is released. IMHO they are all the development releases ;)
+
+
+
+From hanhnguyenvan at gmail.com  Wed Feb  1 11:55:30 2006
+From: hanhnguyenvan at gmail.com (Hanh Nguyen Van)
+Date: Wed, 1 Feb 2006 17:55:30 +0700
+Subject: [Winefish-users] Re: Crash in Winefish
+In-Reply-To: <20060201053515.97C6D1C4002@rekin15.go2.pl>
+References: <6c1435080601270916r1ccc3e6en@mail.gmail.com>
+	 <20060128024301.420704BDA2@rekin16.go2.pl>
+	 <6c1435080601312057h7ba2011dg@mail.gmail.com>
+	 <20060201053515.97C6D1C4002@rekin15.go2.pl>
+Message-ID: <a0d4903b0602010255h1e413ba7u690b93110643796@mail.gmail.com>
+
+Cam on Bac rat nhieu! Chuc Bac nam moi suc khoe nhe! Neu con ruu thi dem ra
+Hue ma nhau nhe! Vu VnMik toi dau roi. Co gi thi lien he voi nhau sau TET
+nhe. Hanh cung sap ra roi.
+Chuc suc khoe!
+BB
+Cheers! Vahamaster!
+
+
+On 2/1/06, kyanh at o2.pl <kyanh at o2.pl> wrote:
+>
+> hi Bojaren
+>
+> > I'm using winefish with much fun.
+> > Thanks for making this apps.:)
+> > I had some troubles in 1.3.2.5,
+> > but after using 1.3.2.6d almost perfect.
+> >
+>
+> Thank you for your very nice words;)
+>
+> > I have one question.
+> > I can't see any icons in menus. It's listed in
+> > only texts e.g File, Insert...
+> > Had I miss some process or files when compiling?
+> > The apps runs like silks, not icons.
+> >
+> You didn't make any mistakes.
+>
+> One of the ideas of Winefish 1.3.2 is KISS (Keep It Simple and
+> Stupid ;)). I dropped almost icons. I mean Winefish is for
+> experienced Users. I almost use HOTKEYS... so icons are useless ;)
+> Maintaining icons is quite hard job (in my opinion -- as I am not a
+> very good at graphics). Anyway, too much graphics makes Winefish
+> slowdown ;)
+>
+> Some people has warned me this.... I think that I should support the
+> options when configureinng... For further discussion please use
+>
+> * mailing list: winefish-users at lists.berliose.de
+> * forum: http://winefish.berlios.de/forum
+>
+> Thanks again for your trying Winefish;)
+>
+> Regards,
+>
+> kyanh
+>
+>
+> PS: there're already Winefish 1.3.2.6f with Template and Brace
+> Finder Support. Winefish 1.3.2.6f may be the last step before
+> 1.3.2.6 is released. IMHO they are all the development releases ;)
+>
+> _______________________________________________
+> Winefish-users mailing list
+> Winefish-users at lists.berlios.de
+> http://lists.berlios.de/mailman/listinfo/winefish-users
+>
+
+
+
+--
+Now And Then
+-------------- next part --------------
+An HTML attachment was scrubbed...
+URL: <https://lists.berlios.de/mailman/private/winefish-users/attachments/20060201/e0e4debd/attachment.html>
+
+From michele.mattioni at poste.it  Wed Feb  1 12:37:09 2006
+From: michele.mattioni at poste.it (Michele)
+Date: Wed, 01 Feb 2006 12:37:09 +0100
+Subject: [Winefish-users] Re: Crash in Winefish
+In-Reply-To: <a0d4903b0602010255h1e413ba7u690b93110643796@mail.gmail.com>
+References: <6c1435080601270916r1ccc3e6en@mail.gmail.com>
+	 <20060128024301.420704BDA2@rekin16.go2.pl>
+	 <6c1435080601312057h7ba2011dg@mail.gmail.com>
+	 <20060201053515.97C6D1C4002@rekin15.go2.pl>
+	 <a0d4903b0602010255h1e413ba7u690b93110643796@mail.gmail.com>
+Message-ID: <1138793830.8458.4.camel@localhost>
+
+Il giorno mer, 01/02/2006 alle 17.55 +0700, Hanh Nguyen Van ha scritto:
+> Cam on Bac rat nhieu! Chuc Bac nam moi suc khoe nhe! Neu con ruu thi
+> dem ra Hue ma nhau nhe! Vu VnMik toi dau roi. Co gi thi lien he voi
+> nhau sau TET nhe. Hanh cung sap ra roi.
+> Chuc suc khoe!
+> BB
+> Cheers! Vahamaster!
+
+Could you explain in english ?
+
+
+
+
+From kyanh at o2.pl  Wed Feb  1 12:57:59 2006
+From: kyanh at o2.pl (kyanh at o2.pl)
+Date: Wed, 01 Feb 2006 12:57:59 +0100
+Subject: [Winefish-users] =?iso-8859-2?Q?Re:_Crash_in_Winefish?=
+In-Reply-To: <1138793830.8458.4.camel@localhost>
+References: <6c1435080601270916r1ccc3e6en@mail.gmail.com>  <20060128024301.420704BDA2@rekin16.go2.pl>  <6c1435080601312057h7ba2011dg@mail.gmail.com>  <20060201053515.97C6D1C4002@rekin15.go2.pl>  <a0d4903b0602010255h1e413ba7u690b93110643796@mail.gmail.com> 
+	<1138793830.8458.4.camel@localhost>
+Message-ID: <20060201115759.9CD655BDFB@rekin22.go2.pl>
+
+Hi all,
+
+> 
+> Could you explain in english ?
+> 
+
+One of my friends isnot familiar with mailing list
+and he has replied to list instead to me.
+
+I am so sorry about that!
+
+kyanh
+
+Hanh wrote:
+> > Cam on Bac rat nhieu!
+> > Chuc Bac nam moi suc khoe nhe! Neu con ruu thi
+> > dem ra Hue ma nhau nhe!
+> > Vu VnMik toi dau roi. Co gi thi lien he voi
+> > nhau sau TET nhe. Hanh cung sap ra roi.
+> > Chuc suc khoe!
+> > BB
+> > Cheers! Vahamaster!
+
+OT:
+He thanked me for Winefish, gave some wishes
+in occasion of Lunar New Year, asked me for VnMiK
+(Vietnamese Distrubtion of MiKTeX) and other stuff.
+He never uses Winefish as he is a Windows fan ;)
+
+
+
+
+
+From michele.mattioni at poste.it  Sat Feb 11 15:19:22 2006
+From: michele.mattioni at poste.it (Michele)
+Date: Sat, 11 Feb 2006 15:19:22 +0100
+Subject: [Winefish-users] Winefish 1.3.2.6f getting better
+Message-ID: <1139667563.7892.13.camel@localhost>
+
+Finally I've managed to install the _f_ version of winefish :)
+
+The templates ' implementation is really cool and well done. 
+The editor start really fast and is almost stable ..
+
+Good work.
+
+Really.
+
+Just getting used to do not have the toolbar.
+No matter if you don't support it at all.
+Menu and shortcuts would do well the work.
+:)
+
+
+
+
+
+From hanhnguyenvan at gmail.com  Sun Feb 12 11:58:08 2006
+From: hanhnguyenvan at gmail.com (Hanh Nguyen Van)
+Date: Sun, 12 Feb 2006 17:58:08 +0700
+Subject: [Winefish-users] Winefish 1.3.2.6f getting better
+In-Reply-To: <1139667563.7892.13.camel@localhost>
+References: <1139667563.7892.13.camel@localhost>
+Message-ID: <a0d4903b0602120258xfc9f166v6d9f32c2c3b3adae@mail.gmail.com>
+
+Congratulaions!
+I will be using it soon! (When I do my theme for master graduations!)
+Many thanks! Good luck!
+
+On 2/11/06, Michele <michele.mattioni at poste.it> wrote:
+>
+> Finally I've managed to install the _f_ version of winefish :)
+>
+> The templates ' implementation is really cool and well done.
+> The editor start really fast and is almost stable ..
+>
+> Good work.
+>
+> Really.
+>
+> Just getting used to do not have the toolbar.
+> No matter if you don't support it at all.
+> Menu and shortcuts would do well the work.
+> :)
+>
+>
+>
+> _______________________________________________
+> Winefish-users mailing list
+> Winefish-users at lists.berlios.de
+> http://lists.berlios.de/mailman/listinfo/winefish-users
+>
+
+
+
+--
+Now And Then
+-------------- next part --------------
+An HTML attachment was scrubbed...
+URL: <https://lists.berlios.de/mailman/private/winefish-users/attachments/20060212/35567a2c/attachment.html>
+
+From kyanh at o2.pl  Tue Feb 14 04:12:18 2006
+From: kyanh at o2.pl (kyanh)
+Date: Tue, 14 Feb 2006 10:12:18 +0700
+Subject: [Winefish-users] Winefish-1.3.2-RC1
+Message-ID: <200602141012.18593.kyanh@o2.pl>
+
+hi all,
+
+Brace Finder (the most important feature of 1.3.2) is improved since 1.3.2.6 
+and now starts its job automatically.
+
+Download here:
+http://download.berlios.de/winefish/winefish-1.3.2-RC1.tgz
+http://download.berlios.de/winefish/winefish-1.3.2-RC1.tgz.md5sum
+
+Thank you for trying winefish.
+
+Regards,
+
+kyanh
+
+PS:
+Changes (1.3.2.6)
+1.3.2.6
+* BUGs fixed
+* Template Manager Support
+* Full Feature Brace Finder
+* Documetation Updated
+* Local Support: French, Italian, Vietnamese
+* Outputbox with clone-operation
+* TeX filter for spell checker
+* Improvement...
+
+

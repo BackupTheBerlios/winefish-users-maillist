@@ -1,0 +1,622 @@
+From kyanh at o2.pl  Sat Apr  1 02:21:25 2006
+From: kyanh at o2.pl (kyanh)
+Date: Sat, 01 Apr 2006 07:21:25 +0700
+Subject: [Winefish-users] winefish 1.3.2 -- the stable version ;)
+In-Reply-To: <1143812326.18398.53.camel@localhost>
+References: <1143729882.9956.30.camel@localhost>  <442D1239.50207@o2.pl> <1143812326.18398.53.camel@localhost>
+Message-ID: <442DC785.3000306@o2.pl>
+
+Hi,
+
+Michele Mattioni wrote:
+> mattions at the-tux ~/Desktop/check $ ls -l
+> totale 8
+> -rw-r--r-- 1 mattions users 4 31 mar 14:52 1.3.2
+> -rw-r--r-- 1 mattions users 4 31 mar 14:52 1.3.2.8a
+>
+> the 1.3.2 < 1.3.2.8a and is shown first
+;) I don't know why but there's a bit difference on my system. ls -l 
+told that 1.3.2 > 1.3.8a
+
+Now things are too clear ;)
+
+Cheers,
+kyanh
+
+
+
+From kyanh at o2.pl  Sat Apr  1 02:34:29 2006
+From: kyanh at o2.pl (kyanh)
+Date: Sat, 01 Apr 2006 07:34:29 +0700
+Subject: [Winefish-users] winefish-1.3.2: patch for gtk+_2.4 users
+Message-ID: <442DCA95.4050108@o2.pl>
+
+Hi,
+
+Users of gtk+ version <2.6 cannot compile winefish-1.3.2. The patch 
+fixes this. Download: 
+http://prdownload.berlios.de/winefish/patch_for_gtk+_24_users.tgz
+
+So sorry:(
+
+kyanh
+
+
+
+From michele.mattioni at poste.it  Sat Apr  1 11:01:20 2006
+From: michele.mattioni at poste.it (Michele Mattioni)
+Date: Sat, 01 Apr 2006 11:01:20 +0200
+Subject: [Winefish-users] winefish 1.3.2 -- the stable version ;)
+In-Reply-To: <442DC785.3000306@o2.pl>
+References: <1143729882.9956.30.camel@localhost>  <442D1239.50207@o2.pl>
+	 <1143812326.18398.53.camel@localhost>  <442DC785.3000306@o2.pl>
+Message-ID: <1143882080.4482.6.camel@localhost>
+
+Il giorno sab, 01/04/2006 alle 07.21 +0700, kyanh ha scritto:
+> Hi,
+> 
+> Michele Mattioni wrote:
+> > mattions at the-tux ~/Desktop/check $ ls -l
+> > totale 8
+> > -rw-r--r-- 1 mattions users 4 31 mar 14:52 1.3.2
+> > -rw-r--r-- 1 mattions users 4 31 mar 14:52 1.3.2.8a
+> >
+> > the 1.3.2 < 1.3.2.8a and is shown first
+> ;) I don't know why but there's a bit difference on my system. ls -l 
+> told that 1.3.2 > 1.3.8a
+> 
+> Now things are too clear ;)
+> 
+> Cheers,
+> kyanh
+
+Wow!!!!
+
+Really strange...
+anyway now it's clear :)
+
+Something doesn't play equal with locale ?...
+m...
+don't know...
+
+according to wikipedia http://en.wikipedia.org/wiki/ASCII , and to
+binary format if you have anything like
+
+x.x.x should be first than
+x.x.x.x [here you use more bits, so the number itself should be bigger]
+
+So Would you adopt a new release scheme or you just use the old way ?
+
+
+
+From michele.mattioni at poste.it  Sat Apr  1 11:33:52 2006
+From: michele.mattioni at poste.it (Michele Mattioni)
+Date: Sat, 01 Apr 2006 11:33:52 +0200
+Subject: [Winefish-users] Winefish and gentoo :)
+Message-ID: <1143884033.4482.11.camel@localhost>
+
+Hi... You can add gentoo to the supported operative system ..
+
+Just write on the site that there is an ebuild on bugzilla at
+http://bugs.gentoo.org/show_bug.cgi?id=106164
+
+to install it just follows the guide
+http://gentoo-wiki.com/HOWTO_Installing_3rd_Party_Ebuilds
+
+Regards, 
+	Michele ;)
+
+
+
+
+From kyanh at o2.pl  Sun Apr  2 05:03:42 2006
+From: kyanh at o2.pl (kyanh)
+Date: Sun, 02 Apr 2006 10:03:42 +0700
+Subject: [Winefish-users] Winefish and gentoo :)
+In-Reply-To: <1143884033.4482.11.camel@localhost>
+References: <1143884033.4482.11.camel@localhost>
+Message-ID: <442F3F0E.3070006@o2.pl>
+
+Hi,
+
+Michele Mattioni wrote:
+> Hi... You can add gentoo to the supported operative system ..
+>
+> Just write on the site that there is an ebuild on bugzilla at
+> http://bugs.gentoo.org/show_bug.cgi?id=106164
+>
+> to install it just follows the guide
+> http://gentoo-wiki.com/HOWTO_Installing_3rd_Party_Ebuilds
+>
+> Regards, 
+> 	Michele ;)
+Thank you! I have announced via forum, news system and the home page.
+
+Cheers,
+kyanh
+
+PS: Someone posted anonymously this gentoo support via the old board 
+(MiniBB). But MiniBB was tedious with spam... The current use vanilla system
+
+
+From kyanh at o2.pl  Sun Apr  2 05:12:48 2006
+From: kyanh at o2.pl (kyanh)
+Date: Sun, 02 Apr 2006 10:12:48 +0700
+Subject: [Winefish-users] winefish 1.3.2 -- the stable version ;)
+In-Reply-To: <1143882080.4482.6.camel@localhost>
+References: <1143729882.9956.30.camel@localhost>  <442D1239.50207@o2.pl>	 <1143812326.18398.53.camel@localhost>  <442DC785.3000306@o2.pl> <1143882080.4482.6.camel@localhost>
+Message-ID: <442F4130.7040907@o2.pl>
+
+Hi,
+
+Michele Mattioni wrote:
+> according to wikipedia http://en.wikipedia.org/wiki/ASCII , and to
+> binary format if you have anything like
+>
+> x.x.x should be first than
+> x.x.x.x [here you use more bits, so the number itself should be bigger]
+>
+> So Would you adopt a new release scheme or you just use the old way ?
+The new one, of course, as mentioned in the very first messages (not 
+Gnome style).
+
+The wf 1.3.2 was released and i think we should play with current stupid 
+scheme ???
+
+When there is any developement releases i will softly ask you whether i 
+will make any further stupid things ;)
+
+I am currently develop the Emacs  key style for Winefish and the 
+multiple outputbox (i am so tedious with the current one as the new grep 
+function completely destroy the previous results). The static scanner 
+for completing \label.s and \ref.s is more important but i have no idea 
+now :(
+
+Cheers,
+
+kyanh
+
+
+
+From michele.mattioni at poste.it  Sun Apr  2 10:25:00 2006
+From: michele.mattioni at poste.it (Michele Mattioni)
+Date: Sun, 02 Apr 2006 10:25:00 +0200
+Subject: [Winefish-users] Winefish and gentoo :)
+In-Reply-To: <442F3F0E.3070006@o2.pl>
+References: <1143884033.4482.11.camel@localhost>  <442F3F0E.3070006@o2.pl>
+Message-ID: <1143966300.11781.0.camel@localhost>
+
+Il giorno dom, 02/04/2006 alle 10.03 +0700, kyanh ha scritto:
+[cut]
+> PS: Someone posted anonymously this gentoo support via the old board 
+Ehm... he was me ;)
+
+> (MiniBB). But MiniBB was tedious with spam... The current use vanilla system
+It's okkey :)
+
+
+
+> _______________________________________________
+> Winefish-users mailing list
+> Winefish-users at lists.berlios.de
+> http://lists.berlios.de/mailman/listinfo/winefish-users
+
+
+
+From kyanh at o2.pl  Wed Apr  5 10:27:24 2006
+From: kyanh at o2.pl (kyanh)
+Date: Wed, 05 Apr 2006 15:27:24 +0700
+Subject: [Winefish-users] Re: Winefish version numbering and archives
+In-Reply-To: <1144163697.6676.0.camel@localhost>
+References: <1144163697.6676.0.camel@localhost>
+Message-ID: <44337F6C.3000702@o2.pl>
+
+Hi,
+
+Daniel Leidert wrote:
+ >
+ > I wanted to update the Debian package (and I wanted to put it into
+ > Debian officially, because of several requests) and ran into a big
+ > problem. Could you please rethink your version numbering? It's not
+ > logical, that 1.3.2 > 1.3.2.x. Sorry, but this makes it impossible to
+ > compare between versions (e.g. using 'dpkg --compare-versions') in
+ > scripts. This problem hits Debian and Debian-based distributions and I
+ > guess, others too.
+ > Second wish: Could you please provide a tar.gz archive too?
+ >
+
+The version 1.3.3 has been released:
+This is exactly 1.3.2 + the patch for gtk+2.4 users.
+The 1.3.3 also fixes troubles with some package managements. download:
+ http://download.berlios.de/winefish/winefish-1.3.3.tgz
+ http://download2.berlios.de/winefish/winefish-1.3.3.tgz
+md5sum:
+ http://download.berlios.de/winefish/winefish-1.3.3.tgz.md5sum
+ http://download2.berlios.de/winefish/winefish-1.3.3.tgz.md5sum
+
+Richard wrote:
+ > I'm using the debian build 1.3.2.5-0dl0.  I've tried compiling 
+1.3.2.7 but haven't been
+ > able to figure out what changes I need to make to the config file to 
+compile on Ubuntu 5.10.
+ > There aren't the necessary .pc files for pkg-config to find the 
+necessary installed packages.
+ > One small item, removing the -q option from the call to ghostscript 
+allows me to run ps2pdf without a crash.
+ > I'll have to wait until someone more knowledgable compiles a newer 
+binary for Debian/Ubuntu.
+Your system misses some header files and devel-packages to build winefish
+
+ > If you know someone who can guide a newcomer to Debian/Linux
+ > through the compile process I'd be glad to try it some more.
+
+There is Daniel Leidert ;) Hope the binary will come soon!
+
+Cheers,
+
+kyanh
+
+
+
+From michele.mattioni at poste.it  Wed Apr  5 11:10:34 2006
+From: michele.mattioni at poste.it (Michele Mattioni)
+Date: Wed, 05 Apr 2006 11:10:34 +0200
+Subject: [Winefish-users] Re: Winefish version numbering and archives
+In-Reply-To: <44337F6C.3000702@o2.pl>
+References: <1144163697.6676.0.camel@localhost>  <44337F6C.3000702@o2.pl>
+Message-ID: <1144228234.9789.5.camel@localhost>
+
+Il giorno mer, 05/04/2006 alle 15.27 +0700, kyanh ha scritto:
+> Hi,
+> 
+> Daniel Leidert wrote:
+>  >
+>  > I wanted to update the Debian package (and I wanted to put it into
+>  > Debian officially, because of several requests) and ran into a big
+>  > problem. Could you please rethink your version numbering? It's not
+>  > logical, that 1.3.2 > 1.3.2.x. Sorry, but this makes it impossible to
+>  > compare between versions (e.g. using 'dpkg --compare-versions') in
+>  > scripts. This problem hits Debian and Debian-based distributions and I
+>  > guess, others too.
+
+Yeah..Also here in gentoo..
+
+>  > Second wish: Could you please provide a tar.gz archive too?
+>  >
+> 
+> The version 1.3.3 has been released:
+> This is exactly 1.3.2 + the patch for gtk+2.4 users.
+> The 1.3.3 also fixes troubles with some package managements. download:
+>  http://download.berlios.de/winefish/winefish-1.3.3.tgz
+>  http://download2.berlios.de/winefish/winefish-1.3.3.tgz
+> md5sum:
+>  http://download.berlios.de/winefish/winefish-1.3.3.tgz.md5sum
+>  http://download2.berlios.de/winefish/winefish-1.3.3.tgz.md5sum
+> 
+
+Now it's fine ;)
+thanks. use a progressive number and every package management will be
+happy.
+
+> Richard wrote:
+>  > I'm using the debian build 1.3.2.5-0dl0.  I've tried compiling 
+> 1.3.2.7 but haven't been
+>  > able to figure out what changes I need to make to the config file to 
+> compile on Ubuntu 5.10.
+>  > There aren't the necessary .pc files for pkg-config to find the 
+> necessary installed packages.
+>  > One small item, removing the -q option from the call to ghostscript 
+> allows me to run ps2pdf without a crash.
+>  > I'll have to wait until someone more knowledgable compiles a newer 
+> binary for Debian/Ubuntu.
+> Your system misses some header files and devel-packages to build winefish
+> 
+>  > If you know someone who can guide a newcomer to Debian/Linux
+>  > through the compile process I'd be glad to try it some more.
+> 
+> There is Daniel Leidert ;) Hope the binary will come soon!
+> 
+> Cheers,
+> 
+> kyanh
+
+Also the 1.3.3 version build fine here
+:)
+
+
+
+
+From bojaren at gmail.com  Sat Apr  8 15:01:55 2006
+From: bojaren at gmail.com (=?EUC-KR?B?sejH/MH4?=)
+Date: Sat, 8 Apr 2006 22:01:55 +0900
+Subject: [Winefish-users] Re: Winefish version numbering and archives
+In-Reply-To: <1144228234.9789.5.camel@localhost>
+References: <1144163697.6676.0.camel@localhost> <44337F6C.3000702@o2.pl>
+	 <1144228234.9789.5.camel@localhost>
+Message-ID: <6c1435080604080601i3564c70bj68d1ae8669e7351a@mail.gmail.com>
+
+//Daniel, Do you making efforts to put winefish into Debian Repo? Wow.
+I look forward to seeing it. When will it be released? I'm on debian etch. :)
+
+2006/4/5, Michele Mattioni <michele.mattioni at poste.it>:
+> Il giorno mer, 05/04/2006 alle 15.27 +0700, kyanh ha scritto:
+> > Hi,
+> >
+> > Daniel Leidert wrote:
+> >  >
+> >  > I wanted to update the Debian package (and I wanted to put it into
+> >  > Debian officially, because of several requests) and ran into a big
+> >  > problem. Could you please rethink your version numbering? It's not
+> >  > logical, that 1.3.2 > 1.3.2.x. Sorry, but this makes it impossible to
+> >  > compare between versions (e.g. using 'dpkg --compare-versions') in
+> >  > scripts. This problem hits Debian and Debian-based distributions and I
+> >  > guess, others too.
+>
+> Yeah..Also here in gentoo..
+>
+> >  > Second wish: Could you please provide a tar.gz archive too?
+> >  >
+> >
+> > The version 1.3.3 has been released:
+> > This is exactly 1.3.2 + the patch for gtk+2.4 users.
+> > The 1.3.3 also fixes troubles with some package managements. download:
+> >  http://download.berlios.de/winefish/winefish-1.3.3.tgz
+> >  http://download2.berlios.de/winefish/winefish-1.3.3.tgz
+> > md5sum:
+> >  http://download.berlios.de/winefish/winefish-1.3.3.tgz.md5sum
+> >  http://download2.berlios.de/winefish/winefish-1.3.3.tgz.md5sum
+> >
+>
+> Now it's fine ;)
+> thanks. use a progressive number and every package management will be
+> happy.
+>
+> > Richard wrote:
+> >  > I'm using the debian build 1.3.2.5-0dl0.  I've tried compiling
+> > 1.3.2.7 but haven't been
+> >  > able to figure out what changes I need to make to the config file to
+> > compile on Ubuntu 5.10.
+> >  > There aren't the necessary .pc files for pkg-config to find the
+> > necessary installed packages.
+> >  > One small item, removing the -q option from the call to ghostscript
+> > allows me to run ps2pdf without a crash.
+> >  > I'll have to wait until someone more knowledgable compiles a newer
+> > binary for Debian/Ubuntu.
+> > Your system misses some header files and devel-packages to build winefish
+> >
+> >  > If you know someone who can guide a newcomer to Debian/Linux
+> >  > through the compile process I'd be glad to try it some more.
+> >
+> > There is Daniel Leidert ;) Hope the binary will come soon!
+> >
+> > Cheers,
+> >
+> > kyanh
+>
+> Also the 1.3.3 version build fine here
+> :)
+>
+>
+> _______________________________________________
+> Winefish-users mailing list
+> Winefish-users at lists.berlios.de
+> http://lists.berlios.de/mailman/listinfo/winefish-users
+>
+
+
+From kyanh at o2.pl  Sat Apr 15 14:35:55 2006
+From: kyanh at o2.pl (kyanh)
+Date: Sat, 15 Apr 2006 19:35:55 +0700
+Subject: [Winefish-users] Debian Package; manpage issuese (was Re: winefish: manpage issues)
+In-Reply-To: <1145025369.10010.43.camel@localhost>
+References: <1145025369.10010.43.camel@localhost>
+Message-ID: <4440E8AB.7050401@o2.pl>
+
+Dear Daniel Leidert,
+
+First i would like to thank you very much for making the Debian package.
+
+Daniel Leidert wrote:
+> Hello Kyanh,
+>
+> I need a few information about the manpage and I found also a few
+> issues. First the information I need for making the Debian package: I'm
+> currently preparing an official Debian package. Therefor I must follow
+> stricter rules when I write down the copyright information for the
+> package. So I need to know, which copyright and license the manpage is?
+> Is it copyrighted by Mich?le Garoche? Is it licensed under the GPL?
+>   
+The man page was created by Miche`le; he didn't mention the copyright 
+information... I think that we should ask him before doing anything. A 
+cc of this message will be sent to him.
+
+Now i am at public internet service. I may fix some issues related to 
+winefish.1.in  but I asm sorry that this work takes me some days as i am 
+on the exams  now.
+
+Could we make the package without the man page? this makes thing easier...
+
+Thank you very much again.
+
+Regards,
+
+kyanh
+> Could you please add this information at least as head-comments in the
+> manpage roff source? Just add at the top:
+>
+> .\" Author(s): Mich?le Garoche (...)
+> .\" Copyright: Copyright (C) 2006 ...
+> .\"   License: ... small license info ... 
+>
+> Then the issues I found (I've attached the patch againast 1.3.3 and the
+> resulting manpage):
+>
+> * header information:
+> - Version is already 1.3.3 - two possibilities: (a) use the date (of
+> last change) instead of the version number there, which is more common
+> (there you could use an SVN keyword for the date instead), or (b)
+> process the file via autoconf and automatically add the real version
+> number and package name (a patch can be submitted if wanted)
+> - "Winefish" should be all-uppercase
+> - instead of "kyanh" you should use '$PACKAGE $VERSION' (both could be
+> added automatically during autoconf run)
+> - this is more common usage of the headers
+>
+> * SYNTAX
+> - wrong section title - following the man-page howto the section title
+> is SYNOPSIS
+> - bold/italic usage is not correct - options, commands, ... are bold;
+> parameters, file-names and replaceable stuff is italic
+>
+> * DESCRIPTION
+> - pdflatex, latex, PCRE missed manpage reference
+> - mpved homepage and mailing list information here (and made them
+> lickable) - see also the notes at AUTHORS
+>
+> * OPTIONS
+> - same bold/italic "issues"
+> - a few improvements (which IMHO look better) are possible - see the
+> attached patch
+>
+> * FILES
+> - ditto: file-names are italic elements
+>
+> * EXAMPLES
+> - ditto - the command is bold, not the comment (only a title would be
+> bold)
+>
+> * AUTHORS
+> - small typo in Mich?les name
+> - small typo in "It may be used by other distribution." (should be
+> plural)
+> - all the homepage, mailing-list and other documentation information do
+> not belong to the AUTHORS section - instead put the homepage and list
+> info into DESCRIPTION and other documentation belongs to SEE ALSO
+> - the location for winefish.html seems incorrect, it should be
+> $prefix/share/doc/winefish/winefish.html. AFAIK no packages
+> documentation is directly put into $prefix/share/doc
+> - $prefix could be replaced by: moving winefish.1 to winefish.1.in,
+> replace '$prefix' with '@prefix@' and then process this file during
+> configure run - then prefix is replaced with the real value (same can
+> automatically add the PACKAGE and VERSION variable)
+>
+> * SEE ALSO
+> - should definitely be added to reference all manpages for helper tools,
+> basics for LaTeX and other documentation - the current list may be
+> incomplete - to be honest: referencing makes more sense, if the command
+> lines are changeable -> I did _not_ test, if you hardcode the commands
+>
+> Regards, Daniel
+>   
+
+
+
+From daniel.leidert.spam at gmx.net  Mon Apr 17 18:55:09 2006
+From: daniel.leidert.spam at gmx.net (Daniel Leidert)
+Date: Mon, 17 Apr 2006 18:55:09 +0200
+Subject: [Winefish-users] Re: Debian Package; manpage issuese
+In-Reply-To: <4440E8AB.7050401@o2.pl>
+References: <1145025369.10010.43.camel@localhost>  <4440E8AB.7050401@o2.pl>
+Message-ID: <1145292910.6737.31.camel@localhost>
+
+Am Samstag, den 15.04.2006, 19:35 +0700 schrieb kyanh:
+> Dear Daniel Leidert,
+> 
+> First i would like to thank you very much for making the Debian package.
+> 
+> Daniel Leidert wrote:
+> > Hello Kyanh,
+> >
+> > I need a few information about the manpage and I found also a few
+> > issues. First the information I need for making the Debian package: I'm
+> > currently preparing an official Debian package. Therefor I must follow
+> > stricter rules when I write down the copyright information for the
+> > package. So I need to know, which copyright and license the manpage is?
+> > Is it copyrighted by Mich?le Garoche? Is it licensed under the GPL?
+> >   
+> The man page was created by Miche`le; he didn't mention the copyright 
+> information... I think that we should ask him before doing anything. A 
+> cc of this message will be sent to him.
+> 
+> Now i am at public internet service. I may fix some issues related to 
+> winefish.1.in  but I asm sorry that this work takes me some days as i am 
+> on the exams  now.
+
+No problem.
+
+> Could we make the package without the man page? this makes thing easier...
+
+First: The unofficial package is already ready, so you can update the
+information on winefish.berlios.de. And following my stats, the updated
+package was already downloaded by many users.
+
+Second: I need a manpage for the official Debian package (the policy
+says: every executable should have a manpage). Because of the policy
+statement I already wrote a winefish manpage a long time ago for my
+winefish Debian packages. Now you provide one, so I don't need to
+provide mine. I just need to know the copyright and license information.
+Patching the files is not a problem. My Debian package already contains
+the fixed manpage.
+
+Regards, Daniel
+
+
+
+From xkyanh at yahoo.com  Tue Apr 18 12:30:06 2006
+From: xkyanh at yahoo.com (Ky Anh)
+Date: Tue, 18 Apr 2006 03:30:06 -0700 (PDT)
+Subject: [Winefish-users] Re: Debian Package; manpage issuese
+Message-ID: <20060418103006.55618.qmail@web51905.mail.yahoo.com>
+
+Dear Leidert,
+
+Daniel Leidert wrote:
+> Second: .... I just need to know the copyright and
+> license information.
+> Patching the files is not a problem. My Debian
+> package already contains the fixed manpage.
+
+The author of man page is M. Garoche. He has no reply
+for previous message. So could you please use the
+following information:
+
+- license: GPL
+- Copyright (c) 2006 Mich?le Garoche
+
+I hope that Miche`le Garoche willnot complain about
+that.
+
+Thank you again,
+
+regards,
+
+kyanh
+
+__________________________________________________
+Do You Yahoo!?
+Tired of spam?  Yahoo! Mail has the best spam protection around 
+http://mail.yahoo.com 
+
+
+From michele.mattioni at poste.it  Sun Apr 30 16:07:05 2006
+From: michele.mattioni at poste.it (Michele Mattioni)
+Date: Sun, 30 Apr 2006 16:07:05 +0200
+Subject: [Winefish-users] Winefish is in the gentoo official portage.
+Message-ID: <1146406026.9608.13.camel@localhost>
+
+For all the gentoo user winefish is now in the official portage.
+
+It is in the unstable branch.
+To install it just
+
+1. emerge --sync
+2. echo "app-text/winefish" >> /etc/portage/package.keywords
+3. emerge winefish
+
+If you already use the unstable branch just skip the 2. point.
+
+Regards 
+Michele
+
+
+

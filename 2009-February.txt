@@ -1,0 +1,32 @@
+From gedili64 at yahoo.fr  Thu Feb  5 13:32:24 2009
+From: gedili64 at yahoo.fr (Adrien)
+Date: Thu, 5 Feb 2009 13:32:24 +0100
+Subject: [Winefish-users] Problem with auto-completion
+Message-ID: <7b85fe720902050432gc057949j4aacd609067ea463@mail.gmail.com>
+
+Hello,
+
+I've used winefish before, one year ago, and I remember that while typing
+you would have pop-ups proposing completion. Now I've compiled the latest
+version (1.3.3) from the source on a Fedora Core 10 and this feature is not
+working anymore. I got the same problem on another computer (running Debian)
+with the winefish deb package installed.
+
+The autocompletion is activated in the menu 'Document', also when you hit
+'Refresh' in the preferences panel, on the 'Word List' section in 'AutoX'
+tab you can see all the latex vocabulary, wich is also available in
+~/.winefish/words (the file words_s is empty, I don't know if it should
+be...). And if you use CTRL+SPACE then you have the differents completions
+proposed. My problem is that these completions don't appear automatically
+while typing in the document, you need to press CTRL+SPACE, and from what I
+remember it used to appear automaticaly a year ago when I was using
+Winefish.
+
+Is that normal? if not does anyone know what could be the problem?
+
+Thanks
+Adrien
+-------------- next part --------------
+An HTML attachment was scrubbed...
+URL: <https://lists.berlios.de/mailman/private/winefish-users/attachments/20090205/2fde2904/attachment.html>
+

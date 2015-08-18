@@ -1,0 +1,370 @@
+From michele.mattioni at poste.it  Tue Aug 22 13:46:19 2006
+From: michele.mattioni at poste.it (Michele Mattioni)
+Date: Tue, 22 Aug 2006 13:46:19 +0200
+Subject: [Winefish-users] Some enhancement fo winefish
+Message-ID: <1156247180.13989.18.camel@localhost>
+
+Hi list, 
+I'm writing my thesis with winefish and I'm enjoying it very much.
+Hovewer I think it lacks something really simple to be the most beatyful
+editor fo LaTeX :
+
+1. Section and label handle.
+Right now, it is possible to generate the structure of the document with
+the Find window, using the regexp perl provided by kyhan in the doc
+(thanks)
+
+Would be really cool if an identation would be provided, according to
+the importance of the section. 
+example
+
+Now:
+
+section(foo)
+subsection(foo_sub1)
+subsection(foo_sub2)
+subsubsection(foo_sub1)
+subsubsection(foo_sub2)
+subsection(foo_sub3)
+subsection(foo_sub4)
+
+what I'm thinking about:
+
+section(foo)
+|
++-subsection(foo_sub1)
+|
++-subsection(foo_sub2)
+	|
+	+-subsubsection(foo_sub1)
+	|
+	+-subsubsection(foo_sub2)
++-subsection(foo_sub3)
+|
++-subsection(foo_sub4)
+
+with the ability of collapse the section
+
+2. tab to support the label
+
+When you write a large docume you need to refer to something already
+written and a tab where all the label that you have already written are
+provided should be really useful to find them out without searchin into
+the whole document.
+
+what do you think about ?
+
+Michele
+
+
+
+From kyanh at o2.pl  Wed Aug 23 10:26:33 2006
+From: kyanh at o2.pl (kyanh)
+Date: Wed, 23 Aug 2006 08:26:33 +0000
+Subject: [Winefish-users] Some enhancement fo winefish
+In-Reply-To: <1156247180.13989.18.camel@localhost>
+References: <1156247180.13989.18.camel@localhost>
+Message-ID: <44EC1139.2070403@o2.pl>
+
+Hi Michele,
+
+I am writing my master thesis too and I am so busy. This summer there is 
+a few improvement that I could bring to winefish... You requests ( cold 
+folding, label completion ) are all in my TODO list and I am sorry that 
+we cannot have them this summer :( Currently you may use grep function 
+for searching label though this function is not really comfortable...
+
+I hope that I finish my thesis this November and only that time can I 
+come back to the world of OSS. So sorry again ;)
+
+Thank you for enjoying winefish.
+
+Yours,
+
+kyanh
+
+PS:
+there is a little story here 
+http://metakyanh.sarovar.org/index.php?cat=soc2006 which tells about my 
+this Summer of Code. But failing registering @ GOOGLE made me sick ;) 
+and so I spent all my time on maintaining Vietnamese TeX Users Group and 
+the thesis ;)
+
+Michele Mattioni wrote:
+> Hi list, 
+> I'm writing my thesis with winefish and I'm enjoying it very much.
+> Hovewer I think it lacks something really simple to be the most beatyful
+> editor fo LaTeX :
+> 
+> 1. Section and label handle.
+> Right now, it is possible to generate the structure of the document with
+> the Find window, using the regexp perl provided by kyhan in the doc
+> (thanks)
+> 
+> Would be really cool if an identation would be provided, according to
+> the importance of the section. 
+> example
+> 
+> Now:
+> 
+> section(foo)
+> subsection(foo_sub1)
+> subsection(foo_sub2)
+> subsubsection(foo_sub1)
+> subsubsection(foo_sub2)
+> subsection(foo_sub3)
+> subsection(foo_sub4)
+> 
+> what I'm thinking about:
+> 
+> section(foo)
+> |
+> +-subsection(foo_sub1)
+> |
+> +-subsection(foo_sub2)
+> 	|
+> 	+-subsubsection(foo_sub1)
+> 	|
+> 	+-subsubsection(foo_sub2)
+> +-subsection(foo_sub3)
+> |
+> +-subsection(foo_sub4)
+> 
+> with the ability of collapse the section
+> 
+> 2. tab to support the label
+> 
+> When you write a large docume you need to refer to something already
+> written and a tab where all the label that you have already written are
+> provided should be really useful to find them out without searchin into
+> the whole document.
+> 
+> what do you think about ?
+> 
+> Michele
+> 
+> _______________________________________________
+> Winefish-users mailing list
+> Winefish-users at lists.berlios.de
+> https://lists.berlios.de/mailman/listinfo/winefish-users
+> 
+
+
+
+From michele.mattioni at poste.it  Wed Aug 23 10:16:00 2006
+From: michele.mattioni at poste.it (Michele Mattioni)
+Date: Wed, 23 Aug 2006 10:16:00 +0200
+Subject: [Winefish-users] Some enhancement fo winefish
+In-Reply-To: <44EC1139.2070403@o2.pl>
+References: <1156247180.13989.18.camel@localhost>  <44EC1139.2070403@o2.pl>
+Message-ID: <1156320960.10524.10.camel@localhost>
+
+Il giorno mer, 23/08/2006 alle 08.26 +0000, kyanh ha scritto:
+> Hi Michele,
+> 
+> I am writing my master thesis too and I am so busy. This summer there is 
+> a few improvement that I could bring to winefish... You requests ( cold 
+> folding, label completion ) are all in my TODO list and I am sorry that 
+> we cannot have them this summer :( Currently you may use grep function 
+> for searching label though this function is not really comfortable...
+> 
+> 
+Don't worry... It's really simple to make a whishlist :)
+The hard part is to transfom the whishes in features :)
+> 
+> 
+> I hope that I finish my thesis this November and only that time can I 
+> come back to the world of OSS. So sorry again ;)
+> 
+Again.. just write your thesis... I also finish to write it in October..
+Then I just have some times to collaborate :)
+I'm not able to write in plain C, but if winefish would support plugin
+from different language (I'm thinking about perl) I could try to make
+some special tab. 
+:)
+
+> Thank you for enjoying winefish.
+> 
+
+Many thanks to you. winefish is simply the best editor for LaTeX.
+That's it. 
+
+> Yours,
+> 
+> kyanh
+> 
+> PS:
+> there is a little story here 
+> http://metakyanh.sarovar.org/index.php?cat=soc2006 which tells about my 
+> this Summer of Code. But failing registering @ GOOGLE made me sick ;) 
+> and so I spent all my time on maintaining Vietnamese TeX Users Group and 
+> the thesis ;)
+
+I know about this story, and I follow it. So it's right... This project
+was not accepted by the google summer code because is NOT part of GNU
+project?
+
+What does it mean?
+
+
+Michele
+
+
+
+From kyanh at o2.pl  Fri Aug 25 18:09:14 2006
+From: kyanh at o2.pl (kyanh)
+Date: Fri, 25 Aug 2006 16:09:14 +0000
+Subject: [Winefish-users] Some enhancement fo winefish
+In-Reply-To: <1156320960.10524.10.camel@localhost>
+References: <1156247180.13989.18.camel@localhost> <44EC1139.2070403@o2.pl>
+	<1156320960.10524.10.camel@localhost>
+Message-ID: <44EF20AA.3050303@o2.pl>
+
+Hi,
+
+Michele Mattioni wrote:
+
+> Again.. just write your thesis... I also finish to write it in October..
+> Then I just have some times to collaborate :)
+> I'm not able to write in plain C, but if winefish would support plugin
+> from different language (I'm thinking about perl) I could try to make
+> some special tab. 
+
+I know nothing about perl (except the name)... But I am thinking of 
+implement a `script language` inside winefish. Using an already-language 
+is the best choice, and it may be Perl. But I wonder what we can do with 
+Winefish + Perl  ???
+
+The most important features should be improved/implemented:
+- hilight engine ( it is slow ; esp. if the file is very long)
+- spell-checker with hilight support ( done in SVN version but quite slow)
+- cold-folding (not yet)
+- ...
+
+>> PS:
+>> there is a little story here 
+>> http://metakyanh.sarovar.org/index.php?cat=soc2006 which tells about my 
+>> this Summer of Code. But failing registering @ GOOGLE made me sick ;) 
+>> and so I spent all my time on maintaining Vietnamese TeX Users Group and 
+>> the thesis ;)
+> 
+> I know about this story, and I follow it. So it's right... This project
+> was not accepted by the google summer code because is NOT part of GNU
+> project?
+> 
+> What does it mean?
+> 
+
+I didn't know. Winefish is a little program and it's clear that SoC 
+dislikes it ;) \let\winefish\relax!
+
+Thank you for all,
+
+Cheers,
+
+kyanh
+
+
+
+From michele.mattioni at poste.it  Fri Aug 25 11:58:12 2006
+From: michele.mattioni at poste.it (Michele Mattioni)
+Date: Fri, 25 Aug 2006 11:58:12 +0200
+Subject: [Winefish-users] Some enhancement fo winefish
+In-Reply-To: <44EF20AA.3050303@o2.pl>
+References: <1156247180.13989.18.camel@localhost> <44EC1139.2070403@o2.pl>
+	<1156320960.10524.10.camel@localhost>  <44EF20AA.3050303@o2.pl>
+Message-ID: <1156499892.10072.42.camel@localhost>
+
+Il giorno ven, 25/08/2006 alle 16.09 +0000, kyanh ha scritto:
+> Hi,
+> 
+> Michele Mattioni wrote:
+> 
+> > Again.. just write your thesis... I also finish to write it in October..
+> > Then I just have some times to collaborate :)
+> > I'm not able to write in plain C, but if winefish would support plugin
+> > from different language (I'm thinking about perl) I could try to make
+> > some special tab. 
+> 
+> I know nothing about perl (except the name)... But I am thinking of 
+> implement a `script language` inside winefish. Using an already-language 
+> is the best choice, and it may be Perl. But I wonder what we can do with 
+> Winefish + Perl  ???
+> 
+
+Well...
+This is a good question.
+
+Maybe something that winefish lacks is a very handy way to write down
+very complicated equation
+
+this would be an idea :
+
+The user just design the equation, and the engine should convert in
+LaTeX. I don't know how to realize it right now. I'm just shot ideas.
+It's more simpler to do this in Perl or in C ?
+
+
+> The most important features should be improved/implemented:
+> - hilight engine ( it is slow ; esp. if the file is very long)
+> - spell-checker with hilight support ( done in SVN version but quite slow)
+> - cold-folding (not yet)
+The gtk provides the 
+GtkExpander http://developer.gnome.org/doc/API/2.0/gtk/GtkExpander.html
+
+We can think about it to display the list according to the level of
+importance as set by LaTeX.
+
+The structure of the document should be updated in an automatic way.
+Or by button, an accelerator or whatever, but something really handy and
+really fast to activate. As far as now there are more than 3 steps
+
+1. <ctrl-f>  for the Find window
+2. dealing with the combo to find the magical regexp 
+3. click ok to put them in the Bookmarks 
+
+It should be one button, or better none (I don't know how to discover..
+I try to investigate.) :)
+
+
+More over we need more tab.
+
+We can't store everything in the Bookmarks. We have to separate label
+from structure.
+
+Again. It's more simpler to do this in Perl or in C ?
+
+Of course the dependence of winefish would became bigger, and will cover
+also the Perl stuff if the plugin should be accepted.
+
+> - ...
+> 
+> >> PS:
+> >> there is a little story here 
+> >> http://metakyanh.sarovar.org/index.php?cat=soc2006 which tells about my 
+> >> this Summer of Code. But failing registering @ GOOGLE made me sick ;) 
+> >> and so I spent all my time on maintaining Vietnamese TeX Users Group and 
+> >> the thesis ;)
+> > 
+> > I know about this story, and I follow it. So it's right... This project
+> > was not accepted by the google summer code because is NOT part of GNU
+> > project?
+> > 
+> > What does it mean?
+> > 
+> 
+> I didn't know. Winefish is a little program and it's clear that SoC 
+> dislikes it ;) \let\winefish\relax!
+> 
+wow.
+\relax++
+> Thank you for all,
+> 
+> Cheers,
+> 
+> kyanh
+
+Thanks to you. :)
+
+
+

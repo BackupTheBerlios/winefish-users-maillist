@@ -1,0 +1,91 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN">
+<HTML>
+ <HEAD>
+   <TITLE> [Winefish-users] Re: WineFish 1.3.2 Compilation Error
+   </TITLE>
+   <LINK REL="Index" HREF="http://lists.berlios.de/pipermail/winefish-users/2006-March/index.html" >
+   <LINK REL="made" HREF="mailto:winefish-users%40lists.berlios.de?Subject=Re%3A%20%5BWinefish-users%5D%20Re%3A%20WineFish%201.3.2%20Compilation%20Error&In-Reply-To=%3C442D07D2.3060002%40o2.pl%3E">
+   <META NAME="robots" CONTENT="index,nofollow">
+   <style type="text/css">
+       pre {
+           white-space: pre-wrap;       /* css-2.1, curent FF, Opera, Safari */
+           }
+   </style>
+   <META http-equiv="Content-Type" content="text/html; charset=us-ascii">
+   <LINK REL="Previous"  HREF="000045.html">
+   
+ </HEAD>
+ <BODY BGCOLOR="#ffffff">
+   <H1>[Winefish-users] Re: WineFish 1.3.2 Compilation Error</H1>
+    <B>kyanh</B> 
+    <A HREF="mailto:winefish-users%40lists.berlios.de?Subject=Re%3A%20%5BWinefish-users%5D%20Re%3A%20WineFish%201.3.2%20Compilation%20Error&In-Reply-To=%3C442D07D2.3060002%40o2.pl%3E"
+       TITLE="[Winefish-users] Re: WineFish 1.3.2 Compilation Error">kyanh at o2.pl
+       </A><BR>
+    <I>Fri Mar 31 12:43:30 CEST 2006</I>
+    <P><UL>
+        <LI>Previous message: <A HREF="000045.html">[Winefish-users] winefish 1.3.2 -- the stable version ;)
+</A></li>
+        
+         <LI> <B>Messages sorted by:</B> 
+              <a href="date.html#42">[ date ]</a>
+              <a href="thread.html#42">[ thread ]</a>
+              <a href="subject.html#42">[ subject ]</a>
+              <a href="author.html#42">[ author ]</a>
+         </LI>
+       </UL>
+    <HR>  
+<!--beginarticle-->
+<PRE>Hi,
+
+Salman Ansari wrote:
+&gt;<i> Dear Kyanh
+</I>&gt;<i>
+</I>&gt;<i> I don't know if you remember me but I had a go with WineFish 1.2.1 
+</I>&gt;<i> last year on my x86_64 and could not get the program to start.
+</I>&gt;<i>
+</I>&gt;<i> Anyway, I am really happy that you have produce
+</I>Yes, sir ;) Your name can be found in THANKS file ;)
+&gt;<i> I am having difficulty compiling v.1.3.2. Here's the error I get:
+</I>&gt;<i>
+</I>&gt;<i> make[1]: Entering directory `/tmp/winefish-1.3.2/src'
+</I>&gt;<i> preferences.o(.text+0x2b3): In function `pref_create_column':
+</I>&gt;<i> /tmp/winefish-1.3.2/src/preferences.c:242: undefined reference to 
+</I>&gt;<i> `gtk_cell_renderer_combo_new'
+</I>&gt;<i>
+</I>i am so sorry about that.
+
+The problem is that your gtk+ is too old. Though the INSTALL file told 
+that winefish 1.3.2 requires gtk+ 2.4 , but the real games need gtk+ 2.6 
+or higher. (( The function `gtk_cell_renderer_combo_new' is only found 
+in this version of gtk+ or higher ))
+
+So please upgrade you gtk+ library... There's no other ways if you wanna 
+use winefish 1.3.2 :(
+
+Sorry again and thank you very much for trying Winefish
+
+Regards,
+
+kyanh
+
+</PRE>
+
+<!--endarticle-->
+    <HR>
+    <P><UL>
+        <!--threads-->
+	<LI>Previous message: <A HREF="000045.html">[Winefish-users] winefish 1.3.2 -- the stable version ;)
+</A></li>
+	
+         <LI> <B>Messages sorted by:</B> 
+              <a href="date.html#42">[ date ]</a>
+              <a href="thread.html#42">[ thread ]</a>
+              <a href="subject.html#42">[ subject ]</a>
+              <a href="author.html#42">[ author ]</a>
+         </LI>
+       </UL>
+
+<hr>
+<a href="https://lists.berlios.de/mailman/listinfo/winefish-users">More information about the Winefish-users
+mailing list</a><br>
+</body></html>

@@ -1,0 +1,260 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN">
+<HTML>
+ <HEAD>
+   <TITLE> [Winefish-users] winefish 1.3.2 -- the stable version ;)
+   </TITLE>
+   <LINK REL="Index" HREF="http://lists.berlios.de/pipermail/winefish-users/2006-March/index.html" >
+   <LINK REL="made" HREF="mailto:winefish-users%40lists.berlios.de?Subject=Re%3A%20%5BWinefish-users%5D%20winefish%201.3.2%20--%20the%20stable%20version%20%3B%29&In-Reply-To=%3C1143812326.18398.53.camel%40localhost%3E">
+   <META NAME="robots" CONTENT="index,nofollow">
+   <style type="text/css">
+       pre {
+           white-space: pre-wrap;       /* css-2.1, curent FF, Opera, Safari */
+           }
+   </style>
+   <META http-equiv="Content-Type" content="text/html; charset=us-ascii">
+   <LINK REL="Previous"  HREF="000043.html">
+   <LINK REL="Next"  HREF="000045.html">
+ </HEAD>
+ <BODY BGCOLOR="#ffffff">
+   <H1>[Winefish-users] winefish 1.3.2 -- the stable version ;)</H1>
+    <B>Michele Mattioni</B> 
+    <A HREF="mailto:winefish-users%40lists.berlios.de?Subject=Re%3A%20%5BWinefish-users%5D%20winefish%201.3.2%20--%20the%20stable%20version%20%3B%29&In-Reply-To=%3C1143812326.18398.53.camel%40localhost%3E"
+       TITLE="[Winefish-users] winefish 1.3.2 -- the stable version ;)">michele.mattioni at poste.it
+       </A><BR>
+    <I>Fri Mar 31 15:38:46 CEST 2006</I>
+    <P><UL>
+        <LI>Previous message: <A HREF="000043.html">[Winefish-users] winefish 1.3.2 -- the stable version ;)
+</A></li>
+        <LI>Next message: <A HREF="000045.html">[Winefish-users] winefish 1.3.2 -- the stable version ;)
+</A></li>
+         <LI> <B>Messages sorted by:</B> 
+              <a href="date.html#44">[ date ]</a>
+              <a href="thread.html#44">[ thread ]</a>
+              <a href="subject.html#44">[ subject ]</a>
+              <a href="author.html#44">[ author ]</a>
+         </LI>
+       </UL>
+    <HR>  
+<!--beginarticle-->
+<PRE>Il giorno ven, 31/03/2006 alle 18.27 +0700, kyanh ha scritto:
+&gt;<i> Hi,
+</I>&gt;<i> 
+</I>&gt;<i> Michele Mattioni wrote:
+</I>&gt;<i> &gt; Hi list.. I've seen there was a _stable-release_ ;)
+</I>&gt;<i> &gt;
+</I>&gt;<i> &gt; Cool.
+</I>&gt;<i> &gt;
+</I>&gt;<i> &gt;   
+</I>&gt;<i> ;) many thanks for trying wf
+</I>&gt;<i> &gt; Another idea about the way how the releases are named ...
+</I>&gt;<i> i am firstly  sorry about that i didn't use your suggestion in previous 
+</I>&gt;<i> discussions. But... please wait... the true thing that: after something 
+</I>&gt;<i> likes 1.3.2.7, 1.3.2.8,... i like to release the stable version 1.3.2 
+</I>&gt;<i> (1.3.2 &gt; 1.3.2.x, really ?) (( We got the trouble because of some RC 
+</I>&gt;<i> releases like 1.3.2-RC1,... ==&gt; this will not be repeated anymore ))
+</I>&gt;<i> Does this make life harder ?
+</I>&gt;<i> &gt; Why don't use the same pattern of the gnome project ?
+</I>&gt;<i> &gt; ...
+</I>&gt;<i> &gt;
+</I>&gt;<i> &gt; just
+</I>&gt;<i> &gt;
+</I>&gt;<i> &gt; 1.4.x --&gt; stable version
+</I>&gt;<i> &gt; 1.5.x --&gt; development
+</I>&gt;<i> &gt;   
+</I>&gt;<i> I may use it. But i like your previous suggesstions! For the later one i 
+</I>&gt;<i> really don't know how to make a new branch!!!
+</I>&gt;<i> 
+</I>&gt;<i> Below that i understood. Sorry for any mistake (==&gt; so more explain, plz ;))
+</I>
+Okkey. First of all I think winefish is really a cool editor for LaTeX,
+and a lot of friends are going to use it ;)
+
+I also presented it on my LUG. ;)
+
+Now, why I'm so boring about the release number .. try to explain.
+
+I'm on gentoo, and I can install winefish from source with emerge.
+
+Scenario :
+Two version of winefish avaible:
+1.3.2.8a --&gt; installed
+1.3.2 [stable the new one] --&gt; not installed (newer)
+the command :
+emerge --update winefish
+should pick the new version and install it. So where is the trouble ?
+The trouble is that in ASCII comparison 1.3.2.8a is &gt; respect 1.3.2, so
+emerge thinks that I have the last avaible version installed, which is
+*not* true ;)
+
+Want try it ?
+
+just
+
+# mkdir check (in an empty folder would be more clear)
+# cd check
+# echo &quot;foo&quot; &gt; 1.3.2.8a
+# echo &quot;foo&quot; &gt; 1.3.2
+
+then try
+#ls -l
+and show which one come first
+in my system I get
+
+<A HREF="https://lists.berlios.de/mailman/listinfo/winefish-users">mattions at the-tux</A> ~/Desktop/check $ ls -l
+totale 8
+-rw-r--r-- 1 mattions users 4 31 mar 14:52 1.3.2
+-rw-r--r-- 1 mattions users 4 31 mar 14:52 1.3.2.8a
+
+the 1.3.2 &lt; 1.3.2.8a and is shown first.
+
+That's why when you release a new version of the winefish you should use
+a bigger third number, respect the devel version. In this cause should
+had been 1.3.3.
+
+Hope this more clear.
+
+
+
+&gt;<i> Note that I will start a new branch now
+</I>&gt;<i> 
+</I>&gt;<i> scheme 1:
+</I>&gt;<i> 
+</I>&gt;<i> 1.3.2 (now)
+</I>&gt;<i> 
+</I>&gt;<i> 1.4.0 (new branch &lt;== thing i wanna do now)
+</I>&gt;<i>   1.4.0.1 (devel)
+</I>&gt;<i>   1.4.0.2  (devel)
+</I>&gt;<i>   ...
+</I>&gt;<i>   1.4.0 (release)
+</I>&gt;<i> 1.4.1 (minor bug fixed)
+</I>&gt;<i> 1.4.1 (minor bug fixed
+</I>&gt;<i> ...
+</I>&gt;<i> 1.5.0 ( new branch again)
+</I>&gt;<i> ...
+</I>&gt;<i> 
+</I>&gt;<i> is this okay?
+</I>No...It's not ok ;)
+
+Try to explain
+
+One way would be:
+scheme 1:
+
+1.3.2 (now)
+
+1.4.1.0 (new branch &lt;== note the odd number -- development -- we start
+ with 1, not with 0, because is a new branches and a lot of new features
+ are in testing)   
+
+  1.4.1.1  (devel)   
+  1.4.1.2  (devel)   
+  ...   
+when times are mature 1.4.1.last_devel_version ==&gt; 1.4.2.0
+
+1.4.2.0 (release -- stable -- note the even number) 
+  1.4.2.1 (minor bug fixed)
+  1.4.2.2 (minor bug fixed
+...
+
+1.4.3.0 (devel)
+  1.4.3.1 (devel)
+...
+when times are mature 1.4.3.last_deve_version ==&gt; 1.4.4.0
+
+1.4.4.0 (release)
+  1.4.4.1 (minor bug fixed)
+
+New branch
+
+1.5.1.0
+
+Why do this ?
+If you have installed the 1.4.1.0 but a new release is available  its
+number would be 1.4.2.0, then 1.4.2.0 &gt; 1.4.1.0 =&gt; the right version
+would be chosen.
+
+
+scheme 2 (i think more clear):
+
+1.3.2 [now]
+
+1.4.0 (release the some code that is now named 1.3.2 as 1.4.0. In this
+way we get a release version with an even number, and we have the
+possibility to have minor bug fixes)
+1.4.1 (minor bug fix)
+1.4.2 (minor bug fix)
+....
+
+
+1.5.0 (devel) [first release for new branches, we would use only odd
+number for development to be standard]
+1.5.1 (devel)
+1.5.2 (devel)
+...
+when testing is okkey and times are mature 1.5.last_development_version
+==&gt; 1.6.0 
+
+1.6.0 (stable) 
+1.6.1 (minor bug fix)
+1.6.2 (minor bug fix)
+...
+
+1.7.0 (new branches for development)
+1.7.1 (devel)
+1.7.2 (devel)
+....
+when times are mature 1.7.last_development_version ==&gt; 1.8.0
+
+1.8.0 (stable)
+
+
+If an user has the 1.5.x version installed and a new stable version
+becomes available   (1.6.0) with an update command the right version
+would be chosen.
+
+Hope it's more clear. 
+
+I think all the packages-managers [apt-get, yum, yast,
+synaptics , .... ]   use the ASCII alphabet to compare which one is
+greater, so which one is newer and has to be installed. 
+Surely emerge think in this way. 
+
+&gt;<i> &gt;   
+</I>&gt;<i> &gt; P.s.: I've just write a news in footnotes about winefish...
+</I>&gt;<i> &gt; I've taken the changelog directly from winefish release note on web ;)
+</I>&gt;<i> Great ;) ... but i almost couldnot find it . could you give me a link :)
+</I>&gt;<i> 
+</I>
+I write about it on <A HREF="http://gnomedesktop.org/">http://gnomedesktop.org/</A>
+Today I'm not able to connect to their site.
+Until yesterday they didn't authorized my news.. but I hope that in few
+days it would be authorized and displayed on their home-page.
+&gt;<i> You make winefish Live! Many many many thanks!
+</I>&gt;<i> 
+</I>I'm just an happy user... You are the master ;)
+
+Michele
+
+
+</PRE>
+
+<!--endarticle-->
+    <HR>
+    <P><UL>
+        <!--threads-->
+	<LI>Previous message: <A HREF="000043.html">[Winefish-users] winefish 1.3.2 -- the stable version ;)
+</A></li>
+	<LI>Next message: <A HREF="000045.html">[Winefish-users] winefish 1.3.2 -- the stable version ;)
+</A></li>
+         <LI> <B>Messages sorted by:</B> 
+              <a href="date.html#44">[ date ]</a>
+              <a href="thread.html#44">[ thread ]</a>
+              <a href="subject.html#44">[ subject ]</a>
+              <a href="author.html#44">[ author ]</a>
+         </LI>
+       </UL>
+
+<hr>
+<a href="https://lists.berlios.de/mailman/listinfo/winefish-users">More information about the Winefish-users
+mailing list</a><br>
+</body></html>

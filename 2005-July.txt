@@ -1,0 +1,185 @@
+From hanhnguyenvan at gmail.com  Fri Jul  1 10:47:25 2005
+From: hanhnguyenvan at gmail.com (Hanh Nguyen Van)
+Date: Fri, 1 Jul 2005 01:47:25 -0700
+Subject: [Winefish-users] --with-vntex
+Message-ID: <a0d4903b05070101476fc15337@mail.gmail.com>
+
+Rieng phan tieng viet thi ruou_ca support rat tot voi cac tuy chon cua
+goi vntex. Du sao thi day cung la phan mem kha nhe, va phan reverse
+search rat chuan. Minh cam thay rat hai long.
+
+Tuy nhien van con phai phat trien nhieu de duoi kip KILE, viec support
+context co le TAC GIA se lam trong nay mai. Thanks for your RUOU+CA,
+di nhau thoi!
+
+-- 
+Now And Then
+
+
+From kyanh at o2.pl  Mon Jul  4 10:31:08 2005
+From: kyanh at o2.pl (kyanh)
+Date: Mon, 4 Jul 2005 15:31:08 +0700
+Subject: [Winefish-users] --with-vntex
+Message-ID: <200507041531.08741.kyanh@o2.pl>
+
+> Rieng phan tieng viet thi ruou_ca support rat tot voi cac tuy chon cua
+> goi vntex. Du sao thi day cung la phan mem kha nhe, va phan reverse
+> search rat chuan. Minh cam thay rat hai long.
+
+hi, nice to hear that :)
+
+> Tuy nhien van con phai phat trien nhieu de duoi kip KILE, viec support
+> context co le TAC GIA se lam trong nay mai. Thanks for your RUOU+CA,
+> di nhau thoi!
+
+I am trying sir. Yep, let's us drunk with Winefish :))
+
+PS: This international list, sir :D -- A forum was setup a:
+  http://winefish.berlios.de/forum/
+
+-- 
+kyanh [ http://kyanh.dotgeek.org/ ]
+
+
+From kyanh at o2.pl  Wed Jul  6 05:39:31 2005
+From: kyanh at o2.pl (kyanh)
+Date: Wed, 6 Jul 2005 10:39:31 +0700
+Subject: [Winefish-users] Winefish-1.3.2-3 released
+Message-ID: <200507061039.32449.kyanh@o2.pl>
+
+ This is a development release.
+
+Download:
+* ftp://ftp.berlios.de/pub/winefish/
+* ftp://ftp.berlios.de/pub/winefish/winefish-1.3.2-3.tar.gz
+
+CHANGES:
+* Major BUGS (outputbox) fixed
+* Minor BUGS fixed
+* Menu added: /External/Stop [ to cancel a tool ]
+* Autocompletion improved
+* Hilight the outputbox
+* Main menu: reordered
+* Translation completed: Vietnamese
+
+Feel free to test and feedback.
+
+Thank you very much!
+
+-- 
+kyanh [ http://kyanh.dotgeek.org/ ]
+
+
+From kyanh at o2.pl  Wed Jul 20 05:29:36 2005
+From: kyanh at o2.pl (kyanh)
+Date: Wed, 20 Jul 2005 10:29:36 +0700
+Subject: [Winefish-users] Winefish 1.3.2 - 5 released
+Message-ID: <200507201029.36548.kyanh@o2.pl>
+
+* This is a development release *
+
+Thank you for trying Winefish!
+
+Download:
+
+https://developer.berlios.de/project/showfiles.php?group_id=4105&release_id=6574
+
+CHANGES [ Winefish 1.3.2-5 ]
+
+* BUGS fixed:
+ - Major BUGS#{57,54,50}
+ - Minor BUGS#{62,59,58,56,55,49,48,47,46,44}
+
+* (NEW) ConTeXT support:
+ - Beta/testing. Require "--with-context" while "./configure"ing
+ - Filetype, hilight
+ - Autocompletion [ \start...\stop, \begin...\end ]
+ - Table wizard [ natural table only ]
+   As I do*NOT* know conTeXT, your requests are highly appreciated!
+
+* Autocompletion:
+ - FIXED: BUGS#55
+ - (NEW) Collector: new command/environment will be added
+   automatically to the database [ ~/.winefish/words_s ]
+   *WARNING* the file is bigger day by day :)
+   FIXME: Winefish eats also '\\notacommand'
+   TODO: add to Preferences Page [ A page for session words ]
+ - If the result of completion contains *ONLY* one command:
+  = The popup menu will be hidden automatically
+    [ if the user's input equals to the result in popup menu ]
+    It may be activated when you press CTRL + Space :)
+  = You can hide the popdown menu by the (Page)Up/Down keys
+ - Duplicate entries will be ignored when Winefish starts.
+   TODO: do this *ONLY* once -- as the feature may slow down Winefish.
+   An option may be added -- bigger Winefish :(
+ - The autocompletion starts (automatically) *ONLY* if at least three
+   characters are typed (includes the backslash: \xy).
+   Anytime, press CTRL + Space!
+ - The mininum width of popdown menu was enlarged [ 64 => 100 ]
+
+* Outputbox:
+ - Behavior changed: If a tool is set 'Show all output', the box will
+   *NOT* scroll automatically. Why? 'Show all output' may produce to many
+   lines and scrolling in this case will slow down the fish. 'cat' is a
+   example. An option may be added in Winefish-1.3.2-7. Within the fix,
+   'cat' is as fast as you want :)
+ - For maximum space, the header of treeview was hidden.
+ - 'Close' icon was placed on the upper left corner [ more beautiful :) ]
+ - When main GUI is resized, the outputbox is resized too.
+   FIXME: not correct if window state changes
+
+* Autotext:
+ - Autoindent supported. Winefish will append the 'indent' string
+   to any '\n' characters of after/before string. I think this is GOOD,
+   but it may make you tedious ;)
+
+* Hilight Syntax:
+ - Updated [ almost new syntax|color ]
+ - Fresh color
+ - Bugs fixed
+ - (NEW) conTeXt hilight syntax [ testing ]
+
+* LaTeX code:
+ - Removed preformat items for: split, cases environment
+ - Table: the '&' character will be vetically aligned
+   TODO: edit table's items within the wizard
+
+* GUI:
+ - Default mode is "Experience". See below.
+ - Sidebar, Main Toolbar, LaTeX Toolbar, Custom Menu are hidden by default
+ - The values of 'View/*' will be stored as global session variable.
+   This mean that they are (re)stored per session.
+ - Last change of 'Document/Line numbers' will be stored as session variable.
+ - Menu reordered: '/Edit/{Save Settings, Preferences}' => '/?/*'
+   FIXME: cannot add '/?/tearoff1'
+ - There are*NOT* any submenus in '/External/'
+
+* The fish:
+ - (NEW) splash screen [ Keep It Simple and Stupid ]
+ - The fish is still blue. I need another one.
+   [ So the fish does*NOT* live in the Splash ]
+
+* Documentation:
+ - (NEW) Added 'doc/TIPS'
+ - The files 'doc/*.pdf' are removed from source directory --
+   we may create a new package 'winefish-doc'.
+   FIXME: The documation is 'out-of-date'.
+
+* Translation:
+ - vi: typo fixed [ Thanks to VnPenguin at http://vnoss.org/ ]
+ - it: updated
+
+* Stuff:
+ - Disabled empty QuickBar warning.
+   This may be considered as a TIPS -- addto documentation.
+ - Code optmized: use (strncmp) instead of (strcmp) some places
+ - (NEW) hilight: CHANGES, TODO, context
+   I donot why these are needed. May be fun?
+   At least I can read my CHANGES very very easily :)
+ - Updated: THANKS, TODO, AUTHORS, README, and CHANGES :)
+ - Added ROADMAP
+
+-- 
+kyanh [ http://kyanh.dotgeek.org/ ]
+
+

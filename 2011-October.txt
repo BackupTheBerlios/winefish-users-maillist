@@ -1,0 +1,131 @@
+From stefan-husmann at t-online.de  Mon Oct 17 15:54:20 2011
+From: stefan-husmann at t-online.de (Stefan Husmann)
+Date: Mon, 17 Oct 2011 15:54:20 +0200
+Subject: [Winefish-users] Further winefish hosting?
+Message-ID: <4E9C338C.7020906@t-online.de>
+
+Hello,
+
+Berlios will be discontinued by the end of this year.
+
+I know that winefish is also hosted on github, but only the sources.
+The bugtracker is still on berlios.
+
+What are the plans regarding this?
+
+Best Regards Stefan
+
+
+From kyanh at viettug.org  Tue Oct 18 02:12:54 2011
+From: kyanh at viettug.org (Anh K. Huynh)
+Date: Tue, 18 Oct 2011 07:12:54 +0700
+Subject: [Winefish-users] Further winefish hosting?
+In-Reply-To: <4E9C338C.7020906@t-online.de>
+References: <4E9C338C.7020906@t-online.de>
+Message-ID: <20111018071254.5ca72f91@viettug.org>
+
+On Mon, 17 Oct 2011 15:54:20 +0200
+Stefan Husmann <stefan-husmann at t-online.de> wrote:
+
+
+> Berlios will be discontinued by the end of this year.
+> 
+> I know that winefish is also hosted on github, but only the sources.
+> The bugtracker is still on berlios.
+> 
+> What are the plans regarding this?
+
+I will move the homepage and the issues to github before Nov 15th.
+
+It's very sad that Berlios will be closed in Dec 2011. There is no
+other way :(
+
+Regards,
+
+
+-- 
+Anh Ky Huynh @ ICT
+Registered Linux User #392115
+
+
+From stefan-husmann at t-online.de  Tue Oct 18 19:24:21 2011
+From: stefan-husmann at t-online.de (Stefan Husmann)
+Date: Tue, 18 Oct 2011 19:24:21 +0200
+Subject: [Winefish-users] Further winefish hosting?
+In-Reply-To: <20111018071254.5ca72f91@viettug.org>
+References: <4E9C338C.7020906@t-online.de>
+	<20111018071254.5ca72f91@viettug.org>
+Message-ID: <4E9DB645.2000901@t-online.de>
+
+Am 18.10.2011 02:12, schrieb Anh K. Huynh:
+> On Mon, 17 Oct 2011 15:54:20 +0200
+> Stefan Husmann<stefan-husmann at t-online.de>  wrote:
+>
+>
+>> Berlios will be discontinued by the end of this year.
+>>
+>> I know that winefish is also hosted on github, but only the sources.
+>> The bugtracker is still on berlios.
+>>
+>> What are the plans regarding this?
+> I will move the homepage and the issues to github before Nov 15th.
+>
+> It's very sad that Berlios will be closed in Dec 2011. There is no
+> other way :(
+>
+> Regards,
+>
+>
+I agree with you, it is sad and a shame that Berlios will dy.
+
+Thank you for your inf and for your efforts in keeping your project alive.
+
+Best Regards Stefan
+
+
+From stefan-husmann at t-online.de  Mon Oct 31 22:30:45 2011
+From: stefan-husmann at t-online.de (Stefan Husmann)
+Date: Mon, 31 Oct 2011 22:30:45 +0100
+Subject: [Winefish-users] Further winefish hosting?
+In-Reply-To: <4E9DB645.2000901@t-online.de>
+References: <4E9C338C.7020906@t-online.de>
+	<20111018071254.5ca72f91@viettug.org>
+	<4E9DB645.2000901@t-online.de>
+Message-ID: <4EAF1385.9060502@t-online.de>
+
+Am 18.10.2011 19:24, schrieb Stefan Husmann:
+> Am 18.10.2011 02:12, schrieb Anh K. Huynh:
+>> On Mon, 17 Oct 2011 15:54:20 +0200
+>> Stefan Husmann<stefan-husmann at t-online.de> wrote:
+>>
+>>
+>>> Berlios will be discontinued by the end of this year.
+>>>
+>>> I know that winefish is also hosted on github, but only the sources.
+>>> The bugtracker is still on berlios.
+>>>
+>>> What are the plans regarding this?
+>> I will move the homepage and the issues to github before Nov 15th.
+>>
+>> It's very sad that Berlios will be closed in Dec 2011. There is no
+>> other way :(
+>>
+>> Regards,
+>>
+>>
+> I agree with you, it is sad and a shame that Berlios will dy.
+>
+> Thank you for your inf and for your efforts in keeping your project alive.
+>
+> Best Regards Stefan
+> _______________________________________________
+> Winefish-users mailing list
+> Winefish-users at lists.berlios.de
+> https://lists.berlios.de/mailman/listinfo/winefish-users
+>
+Good news. It seems that berlios will be kept alive by a new noncommercial
+club/association.
+
+Regards Stefan
+
+

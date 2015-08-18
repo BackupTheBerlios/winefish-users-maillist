@@ -1,0 +1,164 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN">
+<HTML>
+ <HEAD>
+   <TITLE> [Winefish-users] Winefish 1.3.2 - 5 released
+   </TITLE>
+   <LINK REL="Index" HREF="http://lists.berlios.de/pipermail/winefish-users/2005-July/index.html" >
+   <LINK REL="made" HREF="mailto:winefish-users%40lists.berlios.de?Subject=Re%3A%20%5BWinefish-users%5D%20Winefish%201.3.2%20-%205%20released&In-Reply-To=%3C200507201029.36548.kyanh%40o2.pl%3E">
+   <META NAME="robots" CONTENT="index,nofollow">
+   <style type="text/css">
+       pre {
+           white-space: pre-wrap;       /* css-2.1, curent FF, Opera, Safari */
+           }
+   </style>
+   <META http-equiv="Content-Type" content="text/html; charset=us-ascii">
+   <LINK REL="Previous"  HREF="000003.html">
+   
+ </HEAD>
+ <BODY BGCOLOR="#ffffff">
+   <H1>[Winefish-users] Winefish 1.3.2 - 5 released</H1>
+    <B>kyanh</B> 
+    <A HREF="mailto:winefish-users%40lists.berlios.de?Subject=Re%3A%20%5BWinefish-users%5D%20Winefish%201.3.2%20-%205%20released&In-Reply-To=%3C200507201029.36548.kyanh%40o2.pl%3E"
+       TITLE="[Winefish-users] Winefish 1.3.2 - 5 released">kyanh at o2.pl
+       </A><BR>
+    <I>Wed Jul 20 05:29:36 CEST 2005</I>
+    <P><UL>
+        <LI>Previous message: <A HREF="000003.html">[Winefish-users] Winefish-1.3.2-3 released
+</A></li>
+        
+         <LI> <B>Messages sorted by:</B> 
+              <a href="date.html#4">[ date ]</a>
+              <a href="thread.html#4">[ thread ]</a>
+              <a href="subject.html#4">[ subject ]</a>
+              <a href="author.html#4">[ author ]</a>
+         </LI>
+       </UL>
+    <HR>  
+<!--beginarticle-->
+<PRE>* This is a development release *
+
+Thank you for trying Winefish!
+
+Download:
+
+<A HREF="https://developer.berlios.de/project/showfiles.php?group_id=4105&amp;release_id=6574">https://developer.berlios.de/project/showfiles.php?group_id=4105&amp;release_id=6574</A>
+
+CHANGES [ Winefish 1.3.2-5 ]
+
+* BUGS fixed:
+ - Major BUGS#{57,54,50}
+ - Minor BUGS#{62,59,58,56,55,49,48,47,46,44}
+
+* (NEW) ConTeXT support:
+ - Beta/testing. Require &quot;--with-context&quot; while &quot;./configure&quot;ing
+ - Filetype, hilight
+ - Autocompletion [ \start...\stop, \begin...\end ]
+ - Table wizard [ natural table only ]
+   As I do*NOT* know conTeXT, your requests are highly appreciated!
+
+* Autocompletion:
+ - FIXED: BUGS#55
+ - (NEW) Collector: new command/environment will be added
+   automatically to the database [ ~/.winefish/words_s ]
+   *WARNING* the file is bigger day by day :)
+   FIXME: Winefish eats also '\\notacommand'
+   TODO: add to Preferences Page [ A page for session words ]
+ - If the result of completion contains *ONLY* one command:
+  = The popup menu will be hidden automatically
+    [ if the user's input equals to the result in popup menu ]
+    It may be activated when you press CTRL + Space :)
+  = You can hide the popdown menu by the (Page)Up/Down keys
+ - Duplicate entries will be ignored when Winefish starts.
+   TODO: do this *ONLY* once -- as the feature may slow down Winefish.
+   An option may be added -- bigger Winefish :(
+ - The autocompletion starts (automatically) *ONLY* if at least three
+   characters are typed (includes the backslash: \xy).
+   Anytime, press CTRL + Space!
+ - The mininum width of popdown menu was enlarged [ 64 =&gt; 100 ]
+
+* Outputbox:
+ - Behavior changed: If a tool is set 'Show all output', the box will
+   *NOT* scroll automatically. Why? 'Show all output' may produce to many
+   lines and scrolling in this case will slow down the fish. 'cat' is a
+   example. An option may be added in Winefish-1.3.2-7. Within the fix,
+   'cat' is as fast as you want :)
+ - For maximum space, the header of treeview was hidden.
+ - 'Close' icon was placed on the upper left corner [ more beautiful :) ]
+ - When main GUI is resized, the outputbox is resized too.
+   FIXME: not correct if window state changes
+
+* Autotext:
+ - Autoindent supported. Winefish will append the 'indent' string
+   to any '\n' characters of after/before string. I think this is GOOD,
+   but it may make you tedious ;)
+
+* Hilight Syntax:
+ - Updated [ almost new syntax|color ]
+ - Fresh color
+ - Bugs fixed
+ - (NEW) conTeXt hilight syntax [ testing ]
+
+* LaTeX code:
+ - Removed preformat items for: split, cases environment
+ - Table: the '&amp;' character will be vetically aligned
+   TODO: edit table's items within the wizard
+
+* GUI:
+ - Default mode is &quot;Experience&quot;. See below.
+ - Sidebar, Main Toolbar, LaTeX Toolbar, Custom Menu are hidden by default
+ - The values of 'View/*' will be stored as global session variable.
+   This mean that they are (re)stored per session.
+ - Last change of 'Document/Line numbers' will be stored as session variable.
+ - Menu reordered: '/Edit/{Save Settings, Preferences}' =&gt; '/?/*'
+   FIXME: cannot add '/?/tearoff1'
+ - There are*NOT* any submenus in '/External/'
+
+* The fish:
+ - (NEW) splash screen [ Keep It Simple and Stupid ]
+ - The fish is still blue. I need another one.
+   [ So the fish does*NOT* live in the Splash ]
+
+* Documentation:
+ - (NEW) Added 'doc/TIPS'
+ - The files 'doc/*.pdf' are removed from source directory --
+   we may create a new package 'winefish-doc'.
+   FIXME: The documation is 'out-of-date'.
+
+* Translation:
+ - vi: typo fixed [ Thanks to VnPenguin at <A HREF="http://vnoss.org/">http://vnoss.org/</A> ]
+ - it: updated
+
+* Stuff:
+ - Disabled empty QuickBar warning.
+   This may be considered as a TIPS -- addto documentation.
+ - Code optmized: use (strncmp) instead of (strcmp) some places
+ - (NEW) hilight: CHANGES, TODO, context
+   I donot why these are needed. May be fun?
+   At least I can read my CHANGES very very easily :)
+ - Updated: THANKS, TODO, AUTHORS, README, and CHANGES :)
+ - Added ROADMAP
+
+-- 
+kyanh [ <A HREF="http://kyanh.dotgeek.org/">http://kyanh.dotgeek.org/</A> ]
+
+</PRE>
+
+<!--endarticle-->
+    <HR>
+    <P><UL>
+        <!--threads-->
+	<LI>Previous message: <A HREF="000003.html">[Winefish-users] Winefish-1.3.2-3 released
+</A></li>
+	
+         <LI> <B>Messages sorted by:</B> 
+              <a href="date.html#4">[ date ]</a>
+              <a href="thread.html#4">[ thread ]</a>
+              <a href="subject.html#4">[ subject ]</a>
+              <a href="author.html#4">[ author ]</a>
+         </LI>
+       </UL>
+
+<hr>
+<a href="https://lists.berlios.de/mailman/listinfo/winefish-users">More information about the Winefish-users
+mailing list</a><br>
+</body></html>

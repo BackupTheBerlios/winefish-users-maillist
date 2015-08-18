@@ -1,0 +1,158 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN">
+<HTML>
+ <HEAD>
+   <TITLE> [Winefish-users] Debian Package; manpage issuese (was Re: winefish: manpage issues)
+   </TITLE>
+   <LINK REL="Index" HREF="http://lists.berlios.de/pipermail/winefish-users/2006-April/index.html" >
+   <LINK REL="made" HREF="mailto:winefish-users%40lists.berlios.de?Subject=Re%3A%20%5BWinefish-users%5D%20Debian%20Package%3B%20manpage%20issuese%20%28was%20Re%3A%20winefish%3A%20manpage%20issues%29&In-Reply-To=%3C4440E8AB.7050401%40o2.pl%3E">
+   <META NAME="robots" CONTENT="index,nofollow">
+   <style type="text/css">
+       pre {
+           white-space: pre-wrap;       /* css-2.1, curent FF, Opera, Safari */
+           }
+   </style>
+   <META http-equiv="Content-Type" content="text/html; charset=us-ascii">
+   <LINK REL="Previous"  HREF="000055.html">
+   <LINK REL="Next"  HREF="000057.html">
+ </HEAD>
+ <BODY BGCOLOR="#ffffff">
+   <H1>[Winefish-users] Debian Package; manpage issuese (was Re: winefish: manpage issues)</H1>
+    <B>kyanh</B> 
+    <A HREF="mailto:winefish-users%40lists.berlios.de?Subject=Re%3A%20%5BWinefish-users%5D%20Debian%20Package%3B%20manpage%20issuese%20%28was%20Re%3A%20winefish%3A%20manpage%20issues%29&In-Reply-To=%3C4440E8AB.7050401%40o2.pl%3E"
+       TITLE="[Winefish-users] Debian Package; manpage issuese (was Re: winefish: manpage issues)">kyanh at o2.pl
+       </A><BR>
+    <I>Sat Apr 15 14:35:55 CEST 2006</I>
+    <P><UL>
+        <LI>Previous message: <A HREF="000055.html">[Winefish-users] Re: Winefish version numbering and archives
+</A></li>
+        <LI>Next message: <A HREF="000057.html">[Winefish-users] Re: Debian Package; manpage issuese
+</A></li>
+         <LI> <B>Messages sorted by:</B> 
+              <a href="date.html#56">[ date ]</a>
+              <a href="thread.html#56">[ thread ]</a>
+              <a href="subject.html#56">[ subject ]</a>
+              <a href="author.html#56">[ author ]</a>
+         </LI>
+       </UL>
+    <HR>  
+<!--beginarticle-->
+<PRE>Dear Daniel Leidert,
+
+First i would like to thank you very much for making the Debian package.
+
+Daniel Leidert wrote:
+&gt;<i> Hello Kyanh,
+</I>&gt;<i>
+</I>&gt;<i> I need a few information about the manpage and I found also a few
+</I>&gt;<i> issues. First the information I need for making the Debian package: I'm
+</I>&gt;<i> currently preparing an official Debian package. Therefor I must follow
+</I>&gt;<i> stricter rules when I write down the copyright information for the
+</I>&gt;<i> package. So I need to know, which copyright and license the manpage is?
+</I>&gt;<i> Is it copyrighted by Mich&#232;le Garoche? Is it licensed under the GPL?
+</I>&gt;<i>   
+</I>The man page was created by Miche`le; he didn't mention the copyright 
+information... I think that we should ask him before doing anything. A 
+cc of this message will be sent to him.
+
+Now i am at public internet service. I may fix some issues related to 
+winefish.1.in  but I asm sorry that this work takes me some days as i am 
+on the exams  now.
+
+Could we make the package without the man page? this makes thing easier...
+
+Thank you very much again.
+
+Regards,
+
+kyanh
+&gt;<i> Could you please add this information at least as head-comments in the
+</I>&gt;<i> manpage roff source? Just add at the top:
+</I>&gt;<i>
+</I>&gt;<i> .\&quot; Author(s): Mich&#232;le Garoche (...)
+</I>&gt;<i> .\&quot; Copyright: Copyright (C) 2006 ...
+</I>&gt;<i> .\&quot;   License: ... small license info ... 
+</I>&gt;<i>
+</I>&gt;<i> Then the issues I found (I've attached the patch againast 1.3.3 and the
+</I>&gt;<i> resulting manpage):
+</I>&gt;<i>
+</I>&gt;<i> * header information:
+</I>&gt;<i> - Version is already 1.3.3 - two possibilities: (a) use the date (of
+</I>&gt;<i> last change) instead of the version number there, which is more common
+</I>&gt;<i> (there you could use an SVN keyword for the date instead), or (b)
+</I>&gt;<i> process the file via autoconf and automatically add the real version
+</I>&gt;<i> number and package name (a patch can be submitted if wanted)
+</I>&gt;<i> - &quot;Winefish&quot; should be all-uppercase
+</I>&gt;<i> - instead of &quot;kyanh&quot; you should use '$PACKAGE $VERSION' (both could be
+</I>&gt;<i> added automatically during autoconf run)
+</I>&gt;<i> - this is more common usage of the headers
+</I>&gt;<i>
+</I>&gt;<i> * SYNTAX
+</I>&gt;<i> - wrong section title - following the man-page howto the section title
+</I>&gt;<i> is SYNOPSIS
+</I>&gt;<i> - bold/italic usage is not correct - options, commands, ... are bold;
+</I>&gt;<i> parameters, file-names and replaceable stuff is italic
+</I>&gt;<i>
+</I>&gt;<i> * DESCRIPTION
+</I>&gt;<i> - pdflatex, latex, PCRE missed manpage reference
+</I>&gt;<i> - mpved homepage and mailing list information here (and made them
+</I>&gt;<i> lickable) - see also the notes at AUTHORS
+</I>&gt;<i>
+</I>&gt;<i> * OPTIONS
+</I>&gt;<i> - same bold/italic &quot;issues&quot;
+</I>&gt;<i> - a few improvements (which IMHO look better) are possible - see the
+</I>&gt;<i> attached patch
+</I>&gt;<i>
+</I>&gt;<i> * FILES
+</I>&gt;<i> - ditto: file-names are italic elements
+</I>&gt;<i>
+</I>&gt;<i> * EXAMPLES
+</I>&gt;<i> - ditto - the command is bold, not the comment (only a title would be
+</I>&gt;<i> bold)
+</I>&gt;<i>
+</I>&gt;<i> * AUTHORS
+</I>&gt;<i> - small typo in Mich&#232;les name
+</I>&gt;<i> - small typo in &quot;It may be used by other distribution.&quot; (should be
+</I>&gt;<i> plural)
+</I>&gt;<i> - all the homepage, mailing-list and other documentation information do
+</I>&gt;<i> not belong to the AUTHORS section - instead put the homepage and list
+</I>&gt;<i> info into DESCRIPTION and other documentation belongs to SEE ALSO
+</I>&gt;<i> - the location for winefish.html seems incorrect, it should be
+</I>&gt;<i> $prefix/share/doc/winefish/winefish.html. AFAIK no packages
+</I>&gt;<i> documentation is directly put into $prefix/share/doc
+</I>&gt;<i> - $prefix could be replaced by: moving winefish.1 to winefish.1.in,
+</I>&gt;<i> replace '$prefix' with '@prefix@' and then process this file during
+</I>&gt;<i> configure run - then prefix is replaced with the real value (same can
+</I>&gt;<i> automatically add the PACKAGE and VERSION variable)
+</I>&gt;<i>
+</I>&gt;<i> * SEE ALSO
+</I>&gt;<i> - should definitely be added to reference all manpages for helper tools,
+</I>&gt;<i> basics for LaTeX and other documentation - the current list may be
+</I>&gt;<i> incomplete - to be honest: referencing makes more sense, if the command
+</I>&gt;<i> lines are changeable -&gt; I did _not_ test, if you hardcode the commands
+</I>&gt;<i>
+</I>&gt;<i> Regards, Daniel
+</I>&gt;<i>   
+</I>
+
+</PRE>
+
+<!--endarticle-->
+    <HR>
+    <P><UL>
+        <!--threads-->
+	<LI>Previous message: <A HREF="000055.html">[Winefish-users] Re: Winefish version numbering and archives
+</A></li>
+	<LI>Next message: <A HREF="000057.html">[Winefish-users] Re: Debian Package; manpage issuese
+</A></li>
+         <LI> <B>Messages sorted by:</B> 
+              <a href="date.html#56">[ date ]</a>
+              <a href="thread.html#56">[ thread ]</a>
+              <a href="subject.html#56">[ subject ]</a>
+              <a href="author.html#56">[ author ]</a>
+         </LI>
+       </UL>
+
+<hr>
+<a href="https://lists.berlios.de/mailman/listinfo/winefish-users">More information about the Winefish-users
+mailing list</a><br>
+</body></html>

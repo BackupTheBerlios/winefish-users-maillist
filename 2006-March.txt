@@ -1,0 +1,1068 @@
+From michele.mattioni at poste.it  Sun Mar 19 18:15:15 2006
+From: michele.mattioni at poste.it (Michele Mattioni)
+Date: Sun, 19 Mar 2006 18:15:15 +0100
+Subject: [Winefish-users] About the 1.3.2-RC2
+Message-ID: <1142788515.4761.28.camel@localhost>
+
+HI list.
+One question and some feature request.
+
+First of all I have noticed that the outputbox is really faster. 
+And I think this is okkey :)
+Maybe when LaTeX exit with status zero the asterisk would be blue
+[everything?s fine], instead when exit with status !0 would be red [some
+problem here]
+
+The question:
+I didn't understood the functionality of the three columns. More over,
+is it possible to hidden in some way ?
+
+The feautures :
+- A color box would be really good. I mean, in the left tabs a box with
+all the 68 colour named that comes with the graphics package.
+The user should select one of them and with <Ctrl><Alt><O> [the C is
+used for the Cursive] could insert this colour in the document.
+
+The box would contain a square and nearby the name of the Colour. Maybe
+two colunms would be ok.
+Let me explain in the ASCI art :)
+ _            _
+|_| Brown    |_| Yellow
+ _            _
+|_| Red      |_| Orange
+ _            _
+|_| Blu      |_| Apricot
+
+...          ...
+
+- A tabs with Symbols. I know it is possible to download from CTAN the
+Symbols.pdf, but If you could have really accessible the Symbol that you
+need from your preferred LaTeX IDE it wouldn't be good ?
+
+
+Thanks for reading :)
+
+
+
+
+From kyanh at o2.pl  Mon Mar 20 02:41:54 2006
+From: kyanh at o2.pl (kyanh)
+Date: Mon, 20 Mar 2006 08:41:54 +0700
+Subject: [Winefish-users] About the 1.3.2-RC2
+In-Reply-To: <1142788515.4761.28.camel@localhost>
+References: <1142788515.4761.28.camel@localhost>
+Message-ID: <441E0862.8040503@o2.pl>
+
+Hi Miche`le,
+
+Firstly i would like to thank you very much for your feedback!
+
+Michele Mattioni wrote:
+> HI list.
+> One question and some feature request.
+>
+> First of all I have noticed that the outputbox is really faster. 
+> And I think this is okkey :)
+> Maybe when LaTeX exit with status zero the asterisk would be blue
+> [everything?s fine], instead when exit with status !0 would be red [some
+> problem here]
+>   
+oops. i will fix this [ winefish -1.3.2.8 ]
+> The question:
+> I didn't understood the functionality of the three columns. More over,
+> is it possible to hidden in some way ?
+>   
+Do you mean the column of outputbox?
+
+the first: line number
+the second: the basename of the file
+the third: the message
+
+when some errors occur `latex' will be report like this:
+ >> foobar.tex:12:undefined control sequence
+then winefish will capture it like this:
+ >> 12 foobar.tex undefined control sequence
+
+if there is linenumber, single click will open the file at specific line
+and control+click will create a clone file. See winefish.html for more 
+details.
+> The feautures :
+> - A color box would be really good. I mean, in the left tabs a box with
+> all the 68 colour named that comes with the graphics package.
+> The user should select one of them and with <Ctrl><Alt><O> [the C is
+> used for the Cursive] could insert this colour in the document.
+>
+> The box would contain a square and nearby the name of the Colour. Maybe
+> two colunms would be ok.
+> Let me explain in the ASCI art :)
+>  _            _
+> |_| Brown    |_| Yellow
+>  _            _
+> |_| Red      |_| Orange
+>  _            _
+> |_| Blu      |_| Apricot
+>
+> ...          ...
+>
+> - A tabs with Symbols. I know it is possible to download from CTAN the
+> Symbols.pdf, but If you could have really accessible the Symbol that you
+> need from your preferred LaTeX IDE it wouldn't be good ?
+People asks me for this features so many times ;) I currently cannot 
+support this because:
+* i am too busy with my maths studies;
+* winefish currently doesnot support plugins;
+* some other features should be implement first ( command editor, code 
+folding);
+* etc;
+
+so symbols.pdf is the best way ;)
+
+thank you again for your report.
+
+best regards,
+
+kyanh
+
+
+From kyanh at o2.pl  Mon Mar 20 10:54:40 2006
+From: kyanh at o2.pl (kyanh)
+Date: Mon, 20 Mar 2006 16:54:40 +0700
+Subject: [Winefish-users] About the 1.3.2-RC2
+In-Reply-To: <1142788515.4761.28.camel@localhost>
+References: <1142788515.4761.28.camel@localhost>
+Message-ID: <441E7BE0.8080808@o2.pl>
+
+Hi,
+
+Michele Mattioni wrote:
+> HI list.
+> One question and some feature request.
+>
+> First of all I have noticed that the outputbox is really faster. 
+> And I think this is okkey :)
+> Maybe when LaTeX exit with status zero the asterisk would be blue
+> [everything?s fine], instead when exit with status !0 would be red [some
+> problem here]
+I have fixed this in winefish1.3.2.8a. [
+http://prdownload.berlios.de/winefish/winefish-1.3.2.8a.tgz
+]
+
+Thanks and cheers!
+
+kyanh
+
+
+From michele.mattioni at poste.it  Mon Mar 20 12:54:09 2006
+From: michele.mattioni at poste.it (Michele Mattioni)
+Date: Mon, 20 Mar 2006 12:54:09 +0100
+Subject: [Winefish-users] About the 1.3.2-RC2
+In-Reply-To: <441E7BE0.8080808@o2.pl>
+References: <1142788515.4761.28.camel@localhost>  <441E7BE0.8080808@o2.pl>
+Message-ID: <1142855649.9817.20.camel@localhost>
+
+Il giorno lun, 20/03/2006 alle 16.54 +0700, kyanh ha scritto:
+> Hi,
+> 
+> Michele Mattioni wrote:
+> > HI list.
+> > One question and some feature request.
+> >
+> > First of all I have noticed that the outputbox is really faster. 
+> > And I think this is okkey :)
+> > Maybe when LaTeX exit with status zero the asterisk would be blue
+> > [everything?s fine], instead when exit with status !0 would be red [some
+> > problem here]
+> I have fixed this in winefish1.3.2.8a. [
+> http://prdownload.berlios.de/winefish/winefish-1.3.2.8a.tgz
+> ]
+> 
+Well done!!!
+
+:)
+
+
+What I'm talking about was the new feature
+* new features:
+	- column markers (at most 3 markers)
+	- column mark (testing)
+
+the column markers.
+
+I don't understand what is the function, and I haven't found how to disable.
+
+
+
+From michele.mattioni at poste.it  Mon Mar 20 12:59:20 2006
+From: michele.mattioni at poste.it (Michele Mattioni)
+Date: Mon, 20 Mar 2006 12:59:20 +0100
+Subject: [Winefish-users] The version package release.
+Message-ID: <1142855960.9817.26.camel@localhost>
+
+Hi.. Another question [ and a suggestion]
+
+I think the numbers of the versions with winefish is release is a little
+strange.
+
+I mean You use a pattern like:
+
+1.3.2.$N$L
+$N = progressive number
+$L = progressive letter
+
+so, looking to the past
+
+1.3.2.6a
+1.3.2.6a
+1.3.2.6a
+1.3.2.6a
+1.3.2.6a
+1.3.2.6a
+
+
+
+From michele.mattioni at poste.it  Mon Mar 20 13:27:13 2006
+From: michele.mattioni at poste.it (Michele Mattioni)
+Date: Mon, 20 Mar 2006 13:27:13 +0100
+Subject: [Winefish-users] The version package release.
+Message-ID: <1142857633.9817.51.camel@localhost>
+
+Hi.. Another question [ and a suggestion]
+
+I think the numbers of the versions with winefish is release is a little
+strange.
+
+I mean You use a pattern like:
+
+1.3.2.$N$L
+$N = progressive number
+$L = progressive letter
+
+so, looking to the past
+::devel::
+1.3.2.6a
+1.3.2.6b
+1.3.2.6c
+1.3.2.6d
+1.3.2.6e
+1.3.2.6f
+
+::devel::
+1.3.2.7a
+1.3.2.7b
+1.3.2.7c
+
+::release::
+1.3.2_RC1
+1.3.2_RC2
+
+::devel::
+1.3.2.8a
+
+When you try to get the new version [because the ASCI oreder is used]
+The _RC2 seems to be more old of the 1.3.2.7c [what is not]
+
+
+Okkey so now.. what?
+
+Maybe use something more standard .. just
+::devel::
+1.3.2.8b
+1.3.2.8c
+
+Then go to the beta release 
+1.3.3_beta1
+1.3.3_beta2
+1.3.3_beta3
+
+The Release Candidate :
+1.3.3_rc1
+1.3.3_rc2
+1.3.3_rc3
+
+And RELEASE!!
+
+1.3.3
+
+Then restart the development version 
+
+1.3.3.1a
+1.3.3.1b
+....
+The beta
+1.3.4_beta1
+....
+The RC
+1.3.4_rc1
+...
+...
+
+
+And the release
+
+1.3.4
+
+
+Why do this?
+
+For two reasons IMHO:
+
+One : I think it would be more clear to new user, that don't know the
+pattern release of the project
+
+Two : The package manager do an ASCI comparison when has to upgrade a package.
+In this way you get the right selection, with the actual pattern the selection is wrong [almost on my system]
+
+You could skip the beta if you think the package is mature enough, and the 
+selection remain consistent.
+
+What do you think?
+
+p.s.: Sorry for the other incomplete mail.
+
+Regards :)
+ 
+
+
+
+From kyanh at o2.pl  Wed Mar 22 02:53:57 2006
+From: kyanh at o2.pl (kyanh)
+Date: Wed, 22 Mar 2006 08:53:57 +0700
+Subject: [Winefish-users] The version package release.
+In-Reply-To: <1142857633.9817.51.camel@localhost>
+References: <1142857633.9817.51.camel@localhost>
+Message-ID: <4420AE35.8050108@o2.pl>
+
+hi,
+
+Michele Mattioni wrote:
+> Hi.. Another question [ and a suggestion]
+>
+> I think the numbers of the versions with winefish is release is a little
+> strange.
+>
+> I mean You use a pattern like:
+>
+> 1.3.2.$N$L
+> $N = progressive number
+> $L = progressive letter
+>
+> so, looking to the past
+> ::devel::
+> 1.3.2.6a
+> 1.3.2.6b
+> 1.3.2.6c
+> 1.3.2.6d
+> 1.3.2.6e
+> 1.3.2.6f
+>
+> ::devel::
+> 1.3.2.7a
+> 1.3.2.7b
+> 1.3.2.7c
+>
+> ::release::
+> 1.3.2_RC1
+> 1.3.2_RC2
+>
+> ::devel::
+> 1.3.2.8a
+>
+> When you try to get the new version [because the ASCI oreder is used]
+> The _RC2 seems to be more old of the 1.3.2.7c [what is not]
+>
+>
+> Okkey so now.. what?
+>
+> Maybe use something more standard .. just
+> ::devel::
+> 1.3.2.8b
+> 1.3.2.8c
+>
+> Then go to the beta release 1.3.3_beta1
+> 1.3.3_beta2
+> 1.3.3_beta3
+>
+> The Release Candidate :
+> 1.3.3_rc1
+> 1.3.3_rc2
+> 1.3.3_rc3
+>
+> And RELEASE!!
+>
+> 1.3.3
+>
+> Then restart the development version
+> 1.3.3.1a
+> 1.3.3.1b
+> ....
+> The beta
+> 1.3.4_beta1
+> ....
+> The RC
+> 1.3.4_rc1
+> ...
+> ...
+>
+>
+> And the release
+>
+> 1.3.4
+>
+>
+> Why do this?
+>
+> For two reasons IMHO:
+>
+> One : I think it would be more clear to new user, that don't know the
+> pattern release of the project
+>
+> Two : The package manager do an ASCI comparison when has to upgrade a 
+> package.
+> In this way you get the right selection, with the actual pattern the 
+> selection is wrong [almost on my system]
+>
+> You could skip the beta if you think the package is mature enough, and 
+> the selection remain consistent.
+>
+> What do you think?
+>
+> p.s.: Sorry for the other incomplete mail.
+>
+> Regards :)
+>  
+>   
+i am just an amateur. i have asked some people but they didn't give me 
+useful ideas so i looked at releasing of some other programs, then took 
+my own ways;) some people has complained about that.
+
+Little question: what is the next release ?
+
+thank you very much for your suggestions. changes are coming sooon
+
+regards,
+
+kyanh
+
+
+From michele.mattioni at poste.it  Wed Mar 22 11:04:55 2006
+From: michele.mattioni at poste.it (Michele Mattioni)
+Date: Wed, 22 Mar 2006 11:04:55 +0100
+Subject: [Winefish-users] The version package release.
+In-Reply-To: <4420AE35.8050108@o2.pl>
+References: <1142857633.9817.51.camel@localhost>  <4420AE35.8050108@o2.pl>
+Message-ID: <1143021895.9748.18.camel@localhost>
+
+Il giorno mer, 22/03/2006 alle 08.53 +0700, kyanh ha scritto:
+> hi,
+> 
+> Michele Mattioni wrote:
+> > Hi.. Another question [ and a suggestion]
+> >
+> > I think the numbers of the versions with winefish is release is a little
+> > strange.
+> >
+> > I mean You use a pattern like:
+> >
+> > 1.3.2.$N$L
+> > $N = progressive number
+> > $L = progressive letter
+> >
+> > so, looking to the past
+> > ::devel::
+> > 1.3.2.6a
+> > 1.3.2.6b
+> > 1.3.2.6c
+> > 1.3.2.6d
+> > 1.3.2.6e
+> > 1.3.2.6f
+> >
+> > ::devel::
+> > 1.3.2.7a
+> > 1.3.2.7b
+> > 1.3.2.7c
+> >
+> > ::release::
+> > 1.3.2_RC1
+> > 1.3.2_RC2
+> >
+> > ::devel::
+> > 1.3.2.8a
+> >
+> > When you try to get the new version [because the ASCI oreder is used]
+> > The _RC2 seems to be more old of the 1.3.2.7c [what is not]
+> >
+> >
+> > Okkey so now.. what?
+> >
+> > Maybe use something more standard .. just
+> > ::devel::
+> > 1.3.2.8b
+> > 1.3.2.8c
+> >
+> > Then go to the beta release 1.3.3_beta1
+> > 1.3.3_beta2
+> > 1.3.3_beta3
+> >
+> > The Release Candidate :
+> > 1.3.3_rc1
+> > 1.3.3_rc2
+> > 1.3.3_rc3
+> >
+> > And RELEASE!!
+> >
+> > 1.3.3
+> >
+> > Then restart the development version
+> > 1.3.3.1a
+> > 1.3.3.1b
+> > ....
+> > The beta
+> > 1.3.4_beta1
+> > ....
+> > The RC
+> > 1.3.4_rc1
+> > ...
+> > ...
+> >
+> >
+> > And the release
+> >
+> > 1.3.4
+> >
+> >
+> > Why do this?
+> >
+> > For two reasons IMHO:
+> >
+> > One : I think it would be more clear to new user, that don't know the
+> > pattern release of the project
+> >
+> > Two : The package manager do an ASCI comparison when has to upgrade a 
+> > package.
+> > In this way you get the right selection, with the actual pattern the 
+> > selection is wrong [almost on my system]
+> >
+> > You could skip the beta if you think the package is mature enough, and 
+> > the selection remain consistent.
+> >
+> > What do you think?
+> >
+> > p.s.: Sorry for the other incomplete mail.
+> >
+> > Regards :)
+> >  
+> >   
+> i am just an amateur. 
+:)
+don't worry.
+We are in two :)
+
+> i have asked some people but they didn't give me 
+> useful ideas so i looked at releasing of some other programs, then took 
+> my own ways;) some people has complained about that.
+> 
+Don't worry. Version numbers are only a convention.
+And we have to play with the ASCII alphabet
+My proposed is :
+use number.number.numberletter for development [as now]
+then number.number.number+1_rcX for the release candidate
+
+then release a stable number.number.number+1 
+
+
+
+> Little question: what is the next release ?
+> 
+I think winefish is stable enough to be released like a stable release.
+So I proposed to just rename the 1.3.2.8a into 1.3.3_rc1 .
+
+We can test it for 7-10 days then, if no bug arise , release a stable
+version with version 1.3.3.
+
+Moreover winefish is really stable on my system, I use it really
+extensive [like 6-7 hours per day] , and use all the features, wizard
+for figure, table, shortcuts and more ...
+No problem found.
+
+I also notice that a bug that was present before [Try to edit
+preferences directed from winefish caused crash], now is fixed :).
+
+Hope this more clear.
+
+> thank you very much for your suggestions. changes are coming sooon
+> 
+> regards,
+> 
+> kyanh
+
+Regards,
+
+Michele
+
+
+
+From kyanh at o2.pl  Thu Mar 23 01:55:22 2006
+From: kyanh at o2.pl (kyanh)
+Date: Thu, 23 Mar 2006 07:55:22 +0700
+Subject: [Winefish-users] The version package release.
+In-Reply-To: <1143021895.9748.18.camel@localhost>
+References: <1142857633.9817.51.camel@localhost>  <4420AE35.8050108@o2.pl> <1143021895.9748.18.camel@localhost>
+Message-ID: <4421F1FA.4080802@o2.pl>
+
+Hi Michele,
+
+Michele Mattioni wrote:
+> Il giorno mer, 22/03/2006 alle 08.53 +0700, kyanh ha scritto:
+>   
+>> hi,
+>>     
+>> i am just an amateur.
+> :)
+> don't worry.
+> We are in two :)
+>   
+;)
+>> i have asked some people but they didn't give me 
+>> useful ideas so i looked at releasing of some other programs, then took 
+>> my own ways;) some people has complained about that.
+>>
+>>     
+> Don't worry. Version numbers are only a convention.
+> And we have to play with the ASCII alphabet
+> My proposed is :
+> use number.number.numberletter for development [as now]
+> then number.number.number+1_rcX for the release candidate
+>
+> then release a stable number.number.number+1 
+>> ittle question: what is the next release ?
+> think winefish is stable enough to be released like a stable release.
+> So I proposed to just rename the 1.3.2.8a into 1.3.3_rc1 .
+>   
+http://developer.berlios.de/bugs/?func=detailbug&bug_id=6408&group_id=4105
+that's the only bug that i cannot fix :( tried and tried but failed --- 
+it's a bug on MacOSX
+> We can test it for 7-10 days then, if no bug arise , release a stable
+> version with version 1.3.3.
+>
+> Moreover winefish is really stable on my system, I use it really
+> extensive [like 6-7 hours per day] , and use all the features, wizard
+> for figure, table, shortcuts and more ...
+> No problem found.
+>   
+I am sorry that wizards is not very well. Only in summer can i improve it!
+I am busy now and the releases during this time are devel-ones
+> I also notice that a bug that was present before [Try to edit
+> preferences directed from winefish caused crash], now is fixed :).
+>
+> Hope this more clear.
+Thank you very much for your suggestions and using winefish ;)
+
+Cheeeeeers,
+
+kyanh
+
+
+From michele.mattioni at poste.it  Thu Mar 30 16:44:41 2006
+From: michele.mattioni at poste.it (Michele Mattioni)
+Date: Thu, 30 Mar 2006 16:44:41 +0200
+Subject: [Winefish-users] winefish 1.3.2 -- the stable version ;)
+Message-ID: <1143729882.9956.30.camel@localhost>
+
+Hi list.. I've seen there was a _stable-release_ ;)
+
+Cool.
+
+Another idea about the way how the releases are named ...
+Why don't use the same pattern of the gnome project ?
+
+with the _odd_ number the development version ... ALL the development
+version
+
+1.3.3.x (note the third number "3" is an odd number)
+
+
+
+with the _even_ number the stable version so 
+1.3.4.x (note the third number "4" is an even number)
+
+
+in this way I think would be more clear also for the user...
+or maybe the second number would be useful to keep the things in the
+right way...
+
+just
+
+1.4.x --> stable version
+1.5.x --> development
+
+Anyway...
+just don't release a package more updated [like the stable 1.3.2] with a
+minor version compared to the development version [1.3.2.x], plz 
+Every package manager would go crazy!!!!
+;)
+IMHO.
+
+P.s.: I've just write a news in footnotes about winefish...
+I've taken the changelog directly from winefish release note on web ;)
+
+
+
+
+From kyanh at o2.pl  Fri Mar 31 12:43:30 2006
+From: kyanh at o2.pl (kyanh)
+Date: Fri, 31 Mar 2006 17:43:30 +0700
+Subject: [Winefish-users] Re: WineFish 1.3.2 Compilation Error
+In-Reply-To: <BAY108-F16D7BA8CB6878E35A6517DDFD60@phx.gbl>
+References: <BAY108-F16D7BA8CB6878E35A6517DDFD60@phx.gbl>
+Message-ID: <442D07D2.3060002@o2.pl>
+
+Hi,
+
+Salman Ansari wrote:
+> Dear Kyanh
+>
+> I don't know if you remember me but I had a go with WineFish 1.2.1 
+> last year on my x86_64 and could not get the program to start.
+>
+> Anyway, I am really happy that you have produce
+Yes, sir ;) Your name can be found in THANKS file ;)
+> I am having difficulty compiling v.1.3.2. Here's the error I get:
+>
+> make[1]: Entering directory `/tmp/winefish-1.3.2/src'
+> preferences.o(.text+0x2b3): In function `pref_create_column':
+> /tmp/winefish-1.3.2/src/preferences.c:242: undefined reference to 
+> `gtk_cell_renderer_combo_new'
+>
+i am so sorry about that.
+
+The problem is that your gtk+ is too old. Though the INSTALL file told 
+that winefish 1.3.2 requires gtk+ 2.4 , but the real games need gtk+ 2.6 
+or higher. (( The function `gtk_cell_renderer_combo_new' is only found 
+in this version of gtk+ or higher ))
+
+So please upgrade you gtk+ library... There's no other ways if you wanna 
+use winefish 1.3.2 :(
+
+Sorry again and thank you very much for trying Winefish
+
+Regards,
+
+kyanh
+
+
+From kyanh at o2.pl  Fri Mar 31 13:27:53 2006
+From: kyanh at o2.pl (kyanh)
+Date: Fri, 31 Mar 2006 18:27:53 +0700
+Subject: [Winefish-users] winefish 1.3.2 -- the stable version ;)
+In-Reply-To: <1143729882.9956.30.camel@localhost>
+References: <1143729882.9956.30.camel@localhost>
+Message-ID: <442D1239.50207@o2.pl>
+
+Hi,
+
+Michele Mattioni wrote:
+> Hi list.. I've seen there was a _stable-release_ ;)
+>
+> Cool.
+>
+>   
+;) many thanks for trying wf
+> Another idea about the way how the releases are named ...
+i am firstly  sorry about that i didn't use your suggestion in previous 
+discussions. But... please wait... the true thing that: after something 
+likes 1.3.2.7, 1.3.2.8,... i like to release the stable version 1.3.2 
+(1.3.2 > 1.3.2.x, really ?) (( We got the trouble because of some RC 
+releases like 1.3.2-RC1,... ==> this will not be repeated anymore ))
+
+Does this make life harder ?
+> Why don't use the same pattern of the gnome project ?
+> ...
+>
+> just
+>
+> 1.4.x --> stable version
+> 1.5.x --> development
+>   
+I may use it. But i like your previous suggesstions! For the later one i 
+really don't know how to make a new branch!!!
+
+Below that i understood. Sorry for any mistake (==> so more explain, plz ;))
+Note that I will start a new branch now
+
+scheme 1:
+
+1.3.2 (now)
+
+1.4.0 (new branch <== thing i wanna do now)
+  1.4.0.1 (devel)
+  1.4.0.2  (devel)
+  ...
+  1.4.0 (release)
+1.4.1 (minor bug fixed)
+1.4.1 (minor bug fixed
+...
+1.5.0 ( new branch again)
+...
+
+is this okay?
+> Anyway...
+> just don't release a package more updated [like the stable 1.3.2] with a
+> minor version compared to the development version [1.3.2.x], plz 
+> Every package manager would go crazy!!!!
+> ;)
+> IMHO.
+>   
+ooop i am sorry that I don't understand your idea here ;)
+
+((
+in comparing to wf 1.3.2.8.a (latest published devel release) the wf 
+1.3.2 contains fixex for some bugs
+))
+> P.s.: I've just write a news in footnotes about winefish...
+> I've taken the changelog directly from winefish release note on web ;)
+Great ;) ... but i almost couldnot find it . could you give me a link :)
+
+You make winefish Live! Many many many thanks!
+
+kyanh
+
+
+From michele.mattioni at poste.it  Fri Mar 31 15:38:46 2006
+From: michele.mattioni at poste.it (Michele Mattioni)
+Date: Fri, 31 Mar 2006 15:38:46 +0200
+Subject: [Winefish-users] winefish 1.3.2 -- the stable version ;)
+In-Reply-To: <442D1239.50207@o2.pl>
+References: <1143729882.9956.30.camel@localhost>  <442D1239.50207@o2.pl>
+Message-ID: <1143812326.18398.53.camel@localhost>
+
+Il giorno ven, 31/03/2006 alle 18.27 +0700, kyanh ha scritto:
+> Hi,
+> 
+> Michele Mattioni wrote:
+> > Hi list.. I've seen there was a _stable-release_ ;)
+> >
+> > Cool.
+> >
+> >   
+> ;) many thanks for trying wf
+> > Another idea about the way how the releases are named ...
+> i am firstly  sorry about that i didn't use your suggestion in previous 
+> discussions. But... please wait... the true thing that: after something 
+> likes 1.3.2.7, 1.3.2.8,... i like to release the stable version 1.3.2 
+> (1.3.2 > 1.3.2.x, really ?) (( We got the trouble because of some RC 
+> releases like 1.3.2-RC1,... ==> this will not be repeated anymore ))
+> Does this make life harder ?
+> > Why don't use the same pattern of the gnome project ?
+> > ...
+> >
+> > just
+> >
+> > 1.4.x --> stable version
+> > 1.5.x --> development
+> >   
+> I may use it. But i like your previous suggesstions! For the later one i 
+> really don't know how to make a new branch!!!
+> 
+> Below that i understood. Sorry for any mistake (==> so more explain, plz ;))
+
+Okkey. First of all I think winefish is really a cool editor for LaTeX,
+and a lot of friends are going to use it ;)
+
+I also presented it on my LUG. ;)
+
+Now, why I'm so boring about the release number .. try to explain.
+
+I'm on gentoo, and I can install winefish from source with emerge.
+
+Scenario :
+Two version of winefish avaible:
+1.3.2.8a --> installed
+1.3.2 [stable the new one] --> not installed (newer)
+the command :
+emerge --update winefish
+should pick the new version and install it. So where is the trouble ?
+The trouble is that in ASCII comparison 1.3.2.8a is > respect 1.3.2, so
+emerge thinks that I have the last avaible version installed, which is
+*not* true ;)
+
+Want try it ?
+
+just
+
+# mkdir check (in an empty folder would be more clear)
+# cd check
+# echo "foo" > 1.3.2.8a
+# echo "foo" > 1.3.2
+
+then try
+#ls -l
+and show which one come first
+in my system I get
+
+mattions at the-tux ~/Desktop/check $ ls -l
+totale 8
+-rw-r--r-- 1 mattions users 4 31 mar 14:52 1.3.2
+-rw-r--r-- 1 mattions users 4 31 mar 14:52 1.3.2.8a
+
+the 1.3.2 < 1.3.2.8a and is shown first.
+
+That's why when you release a new version of the winefish you should use
+a bigger third number, respect the devel version. In this cause should
+had been 1.3.3.
+
+Hope this more clear.
+
+
+
+> Note that I will start a new branch now
+> 
+> scheme 1:
+> 
+> 1.3.2 (now)
+> 
+> 1.4.0 (new branch <== thing i wanna do now)
+>   1.4.0.1 (devel)
+>   1.4.0.2  (devel)
+>   ...
+>   1.4.0 (release)
+> 1.4.1 (minor bug fixed)
+> 1.4.1 (minor bug fixed
+> ...
+> 1.5.0 ( new branch again)
+> ...
+> 
+> is this okay?
+No...It's not ok ;)
+
+Try to explain
+
+One way would be:
+scheme 1:
+
+1.3.2 (now)
+
+1.4.1.0 (new branch <== note the odd number -- development -- we start
+ with 1, not with 0, because is a new branches and a lot of new features
+ are in testing)   
+
+  1.4.1.1  (devel)   
+  1.4.1.2  (devel)   
+  ...   
+when times are mature 1.4.1.last_devel_version ==> 1.4.2.0
+
+1.4.2.0 (release -- stable -- note the even number) 
+  1.4.2.1 (minor bug fixed)
+  1.4.2.2 (minor bug fixed
+...
+
+1.4.3.0 (devel)
+  1.4.3.1 (devel)
+...
+when times are mature 1.4.3.last_deve_version ==> 1.4.4.0
+
+1.4.4.0 (release)
+  1.4.4.1 (minor bug fixed)
+
+New branch
+
+1.5.1.0
+
+Why do this ?
+If you have installed the 1.4.1.0 but a new release is available  its
+number would be 1.4.2.0, then 1.4.2.0 > 1.4.1.0 => the right version
+would be chosen.
+
+
+scheme 2 (i think more clear):
+
+1.3.2 [now]
+
+1.4.0 (release the some code that is now named 1.3.2 as 1.4.0. In this
+way we get a release version with an even number, and we have the
+possibility to have minor bug fixes)
+1.4.1 (minor bug fix)
+1.4.2 (minor bug fix)
+....
+
+
+1.5.0 (devel) [first release for new branches, we would use only odd
+number for development to be standard]
+1.5.1 (devel)
+1.5.2 (devel)
+...
+when testing is okkey and times are mature 1.5.last_development_version
+==> 1.6.0 
+
+1.6.0 (stable) 
+1.6.1 (minor bug fix)
+1.6.2 (minor bug fix)
+...
+
+1.7.0 (new branches for development)
+1.7.1 (devel)
+1.7.2 (devel)
+....
+when times are mature 1.7.last_development_version ==> 1.8.0
+
+1.8.0 (stable)
+
+
+If an user has the 1.5.x version installed and a new stable version
+becomes available   (1.6.0) with an update command the right version
+would be chosen.
+
+Hope it's more clear. 
+
+I think all the packages-managers [apt-get, yum, yast,
+synaptics , .... ]   use the ASCII alphabet to compare which one is
+greater, so which one is newer and has to be installed. 
+Surely emerge think in this way. 
+
+> >   
+> > P.s.: I've just write a news in footnotes about winefish...
+> > I've taken the changelog directly from winefish release note on web ;)
+> Great ;) ... but i almost couldnot find it . could you give me a link :)
+> 
+
+I write about it on http://gnomedesktop.org/
+Today I'm not able to connect to their site.
+Until yesterday they didn't authorized my news.. but I hope that in few
+days it would be authorized and displayed on their home-page.
+> You make winefish Live! Many many many thanks!
+> 
+I'm just an happy user... You are the master ;)
+
+Michele
+
+
+
+From michele.mattioni at poste.it  Fri Mar 31 16:52:57 2006
+From: michele.mattioni at poste.it (Michele Mattioni)
+Date: Fri, 31 Mar 2006 16:52:57 +0200
+Subject: [Winefish-users] winefish 1.3.2 -- the stable version ;)
+In-Reply-To: <1143812326.18398.53.camel@localhost>
+References: <1143729882.9956.30.camel@localhost>  <442D1239.50207@o2.pl>
+	 <1143812326.18398.53.camel@localhost>
+Message-ID: <1143816777.23963.0.camel@localhost>
+
+> > > P.s.: I've just write a news in footnotes about winefish...
+> > > I've taken the changelog directly from winefish release note on web ;)
+> > Great ;) ... but i almost couldnot find it . could you give me a link :)
+> > 
+> 
+> I write about it on http://gnomedesktop.org/
+> Today I'm not able to connect to their site.
+> Until yesterday they didn't authorized my news.. but I hope that in few
+> days it would be authorized and displayed on their home-page.
+> > You make winefish Live! Many many many thanks!
+> > 
+> I'm just an happy user... You are the master ;)
+> 
+> Michele
+Authorized
+http://gnomedesktop.org/node/2640
+
+;)
+
+
+

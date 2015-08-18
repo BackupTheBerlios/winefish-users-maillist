@@ -1,0 +1,140 @@
+From michele.mattioni at poste.it  Sun Dec 11 17:53:42 2005
+From: michele.mattioni at poste.it (Michele)
+Date: Sun, 11 Dec 2005 17:53:42 +0100
+Subject: [Winefish-users] Hi list It really rocks :)
+Message-ID: <1134320022.9138.11.camel@localhost>
+
+First of all I want to thank you to have wrote a gtk2 LaTeX editor
+really cool :)
+
+Well now. I'm on gentoo and there is an ebuild to get it installed on
+the system.
+The url is here :
+http://bugs.gentoo.org/show_bug.cgi?id=106164
+
+I've installed and everything went fine.
+So you can add this distro to the supported one.
+
+One request :
+
+It would be awesome if the quick start could include a user-defined
+preamble.
+
+Regards.
+
+
+
+
+
+
+
+
+From mattions at gmail.com  Mon Dec 12 00:34:32 2005
+From: mattions at gmail.com (mattions)
+Date: Mon, 12 Dec 2005 00:34:32 +0100
+Subject: [Winefish-users] Hi list It really rocks :)
+Message-ID: <1134344072.8317.10.camel@localhost>
+
+First of all I want to thank you to have wrote a gtk2 LaTeX editor
+really cool :)
+
+Well now. I'm on gentoo and there is an ebuild to get it installed on
+the system.
+The url is here :
+http://bugs.gentoo.org/show_bug.cgi?id=106164
+
+I've installed and everything went fine.
+So you can add this distro to the supported one.
+
+One request :
+
+It would be awesome if the quick start could include a user-defined
+preamble.
+
+Regards.
+
+
+
+
+
+
+
+
+From kyanh at o2.pl  Tue Dec 20 03:17:43 2005
+From: kyanh at o2.pl (kyanh)
+Date: Tue, 20 Dec 2005 09:17:43 +0700
+Subject: [Winefish-users] Hi list It really rocks :)
+In-Reply-To: <1134320022.9138.11.camel@localhost>
+References: <1134320022.9138.11.camel@localhost>
+Message-ID: <200512200917.43278.kyanh@o2.pl>
+
+On Sunday 11 December 2005 23:53, Michele wrote:
+> First of all I want to thank you to have wrote a gtk2 LaTeX editor
+> really cool :)
+>
+> Well now. I'm on gentoo and there is an ebuild to get it installed on
+> the system.
+> The url is here :
+> http://bugs.gentoo.org/show_bug.cgi?id=106164
+>
+> I've installed and everything went fine.
+> So you can add this distro to the supported one.
+>
+> One request :
+>
+> It would be awesome if the quick start could include a user-defined
+> preamble.
+>
+> Regards.
+>
+Thank you very much for your trying and supporting!
+
+I come back to Winefish after 4/1: i am on the final exams :(
+
+Thank you again! Happy New Year!
+
+Best regards!
+
+-- 
+kyanh
+
+
+From kyanh at o2.pl  Tue Dec 20 03:30:06 2005
+From: kyanh at o2.pl (kyanh)
+Date: Tue, 20 Dec 2005 09:30:06 +0700
+Subject: [Winefish-users] Hi list It really rocks :)
+In-Reply-To: <1134320022.9138.11.camel@localhost>
+References: <1134320022.9138.11.camel@localhost>
+Message-ID: <200512200930.06894.kyanh@o2.pl>
+
+On Sunday 11 December 2005 23:53, Michele wrote:
+> First of all I want to thank you to have wrote a gtk2 LaTeX editor
+> really cool :)
+>
+> Well now. I'm on gentoo and there is an ebuild to get it installed on
+> the system.
+> The url is here :
+> http://bugs.gentoo.org/show_bug.cgi?id=106164
+>
+> I've installed and everything went fine.
+> So you can add this distro to the supported one.
+>
+> One request :
+>
+> It would be awesome if the quick start could include a user-defined
+> preamble.
+>
+> Regards.
+>
+Thank you very much for your trying and supporting!
+
+I come back to Winefish after 4/1: i am on the final exams :(
+
+Thank you again! Happy New Year!
+
+Best regards!
+
+-- 
+kyanh
+
+

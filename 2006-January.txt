@@ -1,0 +1,645 @@
+From kyanh at o2.pl  Thu Jan  5 14:11:04 2006
+From: kyanh at o2.pl (kyanh at o2.pl)
+Date: Thu, 05 Jan 2006 14:11:04 +0100
+Subject: [Winefish-users] =?iso-8859-2?Q?remove_HTML_toolbars?=
+Message-ID: <20060105131104.F290F6AC0D0@rekin21.go2.pl>
+
+Hi all,
+
+last 4 months i had to study hard
+so I had notime for Winefish.
+
+I am going to a "ONE" free-month for coding
+before continueing my 2nd term;(
+
+I am going to remove HTML toolbar from Winefish:
+I have never used it ;) Please comment this idea.
+
+Below some things I will do:
+
+* fix output box and bugs reported at:
+http://developer.berlios.de/bugs/?group_id=4105
+* drop HTML toolbar (above)
+* remove some item from Edit Menu
+(\textit,\texbf, some ams environments)
+* add some function to delete words from PopUP menu
+* etc.
+
+Feel free to comment.
+
+Thank you very much for enjoy Winefish.
+
+Best regards,
+
+kyanh
+
+
+PS: i may be late in replying!
+
+
+
+
+
+From avillavecesn at gmail.com  Tue Jan 10 08:49:20 2006
+From: avillavecesn at gmail.com (=?ISO-8859-1?Q?Andr=E9s_Villaveces?=)
+Date: Tue, 10 Jan 2006 16:49:20 +0900
+Subject: [Winefish-users] new user
+Message-ID: <11e40dea0601092349u40cc8046o2f14ee6a490b9894@mail.gmail.com>
+
+Hi,
+
+I was a bit frustrated with the behavior of Kile and found WineFish. It
+looks very nice and clean so far. I only miss (sometimes) a list of Latex
+symbols (where the symbols appear) for those times when I have to include a
+new symbol I don't use often. Other than that, it looks very nice!
+
+Andr?s Villaveces
+-------------- next part --------------
+An HTML attachment was scrubbed...
+URL: <https://lists.berlios.de/mailman/private/winefish-users/attachments/20060110/9a965a83/attachment.html>
+
+From avillavecesn at gmail.com  Tue Jan 10 09:06:38 2006
+From: avillavecesn at gmail.com (=?ISO-8859-1?Q?Andr=E9s_Villaveces?=)
+Date: Tue, 10 Jan 2006 17:06:38 +0900
+Subject: [Winefish-users] closing math environment?
+Message-ID: <11e40dea0601100006o7a994b2p936b45eafbfa4f94@mail.gmail.com>
+
+Another quick question: for some reason, winefish doesn't seem to be warning
+me if I forget to close a math environment! I mean, something like opening a
+formula with $... typing it ... there should be some way to not forget to
+close the $ symbol!
+
+Thanks,
+
+Andr?s Villaveces
+-------------- next part --------------
+An HTML attachment was scrubbed...
+URL: <https://lists.berlios.de/mailman/private/winefish-users/attachments/20060110/7fd91cf3/attachment.html>
+
+From kyanh at o2.pl  Thu Jan 26 15:43:14 2006
+From: kyanh at o2.pl (kyanh at o2.pl)
+Date: Thu, 26 Jan 2006 15:43:14 +0100
+Subject: [Winefish-users] =?iso-8859-2?Q?Winefish_1.3.2.6(b)_released?=
+Message-ID: <20060126144314.2AFAC4BE3B@rekin16.go2.pl>
+
+Hi all,
+
+Winefish 1.3.2.6(b) released.
+
+Download:
+http://developer.berlios.de/project/showfiles.php?group_id=4105&release_id=8823
+
+Feel free to test and update the PO files.
+
+Thank you very much.
+
+Regards,
+
+kyanh at viettug.org
+
+Changes:
+* important changes:
+- requires  libgtk+-2.0 version >= 2.4
+* for users of previous version:
+- move ~/.winefish/rcfile_v2 to ~/.winefish/.rcfile
+- reset the last variable (Save, Show)
+for tool (Preferences Page / TeXbox)
+
+* fixed BUG#{3,10,67,69,70,71,5689,5869,5990}
+
+* new features:
+- delete command *directly* from popup menu (autocompletion)
+- 'project mode' (external menu)
+value is saved automatically
+- added popup menu for outputbox
+(copy message from current line)
+- TeX filter for spell checker
+- find in files (menu = edit/find,
+replace/find in files) (requires `find', `grep')
+- documentation: ./doc/winefish.{html,txt}
+
+* improved:
+- outputbox's frontend/backend
+(backend: require gtk+-2.4; base on bluefish#20060119)
+- quicklist/table wizard
+(* print row/column index; * added ding(auto)list *)
+- menu items reordered (better???)
+
+* dropped:
+- toolbars (i have never used it)
+- context support (--with-context)
+- vntex support (--with-vntex)
+- vietnamese documentation
+- many images and stock items
+- many items from `insert' menu
+
+* stuffs:
+- added Menu External/Soft Clean
+
+
+
+
+From mattions at gmail.com  Sat Jan 28 16:08:26 2006
+From: mattions at gmail.com (mattions)
+Date: Sat, 28 Jan 2006 16:08:26 +0100
+Subject: [Winefish-users] Winefish 1.3.2.6(b) released
+In-Reply-To: <20060126144314.2AFAC4BE3B@rekin16.go2.pl>
+References: <20060126144314.2AFAC4BE3B@rekin16.go2.pl>
+Message-ID: <1138460906.8306.14.camel@localhost>
+
+Il giorno gio, 26/01/2006 alle 15.43 +0100, kyanh at o2.pl ha scritto: 
+> Hi all,
+> 
+> Winefish 1.3.2.6(b) released.
+> 
+> Download:
+> http://developer.berlios.de/project/showfiles.php?group_id=4105&release_id=8823
+> 
+> Feel free to test and update the PO files.
+> 
+> Thank you very much.
+> 
+> Regards,
+> 
+> kyanh at viettug.org
+> 
+
+Hi .. just tried out and tested :)
+
+Compiling fine, works really good.. 
+> * fixed BUG#{3,10,67,69,70,71,5689,5869,5990}
+> 
+> * new features:
+
+> (copy message from current line)
+> - TeX filter for spell checker
+
+I have some problem with this function ...
+Seems like the Tex filters doesn't work anymore...
+
+I have tried it out from console with the command:
+
+aspell -t -c MY_FILE.tex
+and it works in the right mode...
+
+I miss something or it has to works out of the box ?
+
+And if it would be possible to have an option to use several
+dictionaries at the same moment. [I mean, I'm italian and write my
+documents in italian and english ] 
+
+
+> - menu items reordered (better???)
+
+They're ok :)
+
+> * dropped:
+> - toolbars (i have never used it)
+I find the toolbars really funny and useful...
+It's possible to have it back ?
+I know about your last email about comment out this idea..
+But I was away from home and I discover this email only today.
+sorry :(
+
+
+> * stuffs:
+> - added Menu External/Soft Clean
+> 
+Would be also useful to store somewhere some user preambles:
+I have several preambles according to what I'm going to write.. 
+- Presentations
+- Articles
+- Books..
+with specific packages and macros..
+If they can work as the  Insert/Tool/Code function would be really
+useful.
+
+
+And of course ..
+thank you for this so cool software :)
+
+
+
+
+From mattions at gmail.com  Sat Jan 28 17:21:21 2006
+From: mattions at gmail.com (mattions)
+Date: Sat, 28 Jan 2006 17:21:21 +0100
+Subject: [Winefish-users] Winefish 1.3.2.6(b) released
+In-Reply-To: <20060126144314.2AFAC4BE3B@rekin16.go2.pl>
+References: <20060126144314.2AFAC4BE3B@rekin16.go2.pl>
+Message-ID: <1138465281.8306.16.camel@localhost>
+
+Il giorno gio, 26/01/2006 alle 15.43 +0100, kyanh at o2.pl ha scritto: 
+> Hi all,
+> 
+> Winefish 1.3.2.6(b) released.
+> 
+> Download:
+> http://developer.berlios.de/project/showfiles.php?group_id=4105&release_id=8823
+> 
+> Feel free to test and update the PO files.
+> 
+> Thank you very much.
+> 
+> Regards,
+> 
+> kyanh at viettug.org
+> 
+
+Hi .. just tried out and tested :)
+
+Compiling fine, works really good.. 
+> * fixed BUG#{3,10,67,69,70,71,5689,5869,5990}
+> 
+> * new features:
+
+> (copy message from current line)
+> - TeX filter for spell checker
+
+I have some problem with this function ...
+Seems like the Tex filters doesn't work anymore...
+
+I have tried it out from console with the command:
+
+aspell -t -c MY_FILE.tex
+and it works in the right mode...
+
+I miss something or it has to works out of the box ?
+
+And if it would be possible to have an option to use several
+dictionaries at the same moment. [I mean, I'm italian and write my
+documents in italian and english ] 
+
+
+> - menu items reordered (better???)
+
+They're ok :)
+
+> * dropped:
+> - toolbars (i have never used it)
+I find the toolbars really funny and useful...
+It's possible to have it back ?
+I know about your last email about comment out this idea..
+But I was away from home and I discover this email only today.
+sorry :(
+
+
+> * stuffs:
+> - added Menu External/Soft Clean
+> 
+Would be also useful to store somewhere some user preambles:
+I have several preambles according to what I'm going to write.. 
+- Presentations
+- Articles
+- Books..
+with specific packages and macros..
+If they can work as the  Insert/Tool/Code function would be really
+useful.
+
+
+And of course ..
+thank you for this so cool software :)
+
+
+
+
+From michele.mattioni at poste.it  Sat Jan 28 19:34:01 2006
+From: michele.mattioni at poste.it (Michele)
+Date: Sat, 28 Jan 2006 19:34:01 +0100
+Subject: [Winefish-users] Winefish 1.3.2.6(b) released
+In-Reply-To: <20060126144314.2AFAC4BE3B@rekin16.go2.pl>
+References: <20060126144314.2AFAC4BE3B@rekin16.go2.pl>
+Message-ID: <1138473241.8306.22.camel@localhost>
+
+Il giorno gio, 26/01/2006 alle 15.43 +0100, kyanh at o2.pl ha scritto: 
+> Hi all,
+> 
+> Winefish 1.3.2.6(b) released.
+> 
+> Download:
+> http://developer.berlios.de/project/showfiles.php?group_id=4105&release_id=8823
+> 
+> Feel free to test and update the PO files.
+> 
+> Thank you very much.
+> 
+> Regards,
+> 
+> kyanh at viettug.org
+> 
+
+Hi .. just tried out and tested :)
+
+Compiling fine, works really good.. 
+> * fixed BUG#{3,10,67,69,70,71,5689,5869,5990}
+> 
+> * new features:
+
+> (copy message from current line)
+> - TeX filter for spell checker
+
+I have some problem with this function ...
+Seems like the Tex filters doesn't work anymore...
+
+I have tried it out from console with the command:
+
+aspell -t -c MY_FILE.tex
+and it works in the right mode...
+
+I miss something or it has to works out of the box ?
+
+And if it would be possible to have an option to use several
+dictionaries at the same moment. [I mean, I'm italian and write my
+documents in italian and english ] 
+
+
+> - menu items reordered (better???)
+
+They're ok :)
+IMHO
+
+> * dropped:
+> - toolbars (i have never used it)
+I find the toolbars really funny and useful...
+It's possible to have it back ?
+I know about your last email about comment out this idea..
+But I was away from home and I discover this email only today.
+sorry :(
+
+
+> * stuffs:
+> - added Menu External/Soft Clean
+> 
+Would be also useful to store somewhere some user preambles:
+I have several preambles according to what I'm going to write.. 
+- Presentations
+- Articles
+- Books..
+with specific packages and macros..
+If they can work as the  Insert/Tool/Code function would be really
+useful.
+
+
+And of course ..
+thank you for this so cool software :)
+
+
+
+
+From kyanh at o2.pl  Sun Jan 29 04:19:01 2006
+From: kyanh at o2.pl (kyanh at o2.pl)
+Date: Sun, 29 Jan 2006 04:19:01 +0100
+Subject: [Winefish-users] =?iso-8859-2?Q?Re:_[Winefish-users]_Winefish_1.3.2.6(b)_released?=
+In-Reply-To: <1138473241.8306.22.camel@localhost>
+References: <20060126144314.2AFAC4BE3B@rekin16.go2.pl> 
+	<1138473241.8306.22.camel@localhost>
+Message-ID: <20060129031901.B544816C005@rekin13.go2.pl>
+
+>
+> 
+> Hi .. just tried out and tested :)
+> 
+
+;) thank your for you try ;)
+
+>
+> > - TeX filter for spell checker
+> 
+> I have some problem with this function ...
+> Seems like the Tex filters doesn't work anymore...
+> 
+> I have tried it out from console with the command:
+> 
+> aspell -t -c MY_FILE.tex
+> and it works in the right mode...
+> 
+> I miss something or it has to works out of the box ?
+> 
+
+I am sorry that I donot understanding what you mean.
+Could you more specify? The TeX filter will ingore
+all LaTeX command (started by the \backslash)
+when checking. *NOTE* that TeX filter is a Winefish's
+function, not a aspell's one.THIS MEANS THAT you must
+run the spell checker from Winefish (menu Document/)
+to enjoy the filter ;)
+
+> And if it would be possible to have an option
+> to use several dictionaries at the same moment.
+> [I mean, I'm italian and write my
+> documents in italian and english ] 
+> 
+
+Currently i develope the 1.3.2 families which contains
+the most important features is brace finder. You request
+will be listed in TODO ;)
+
+> > * dropped:
+> > - toolbars (i have never used it)
+> I find the toolbars really funny and useful...
+> It's possible to have it back ?
+> I know about your last email about comment out this idea..
+> But I was away from home and I discover this email only today.
+> sorry :(
+
+Don't worry...I will support `--with-toolbars' options soon.
+
+> 
+> 
+> > * stuffs:
+> > - added Menu External/Soft Clean
+> > 
+
+> Would be also useful to store somewhere some user preambles:
+> I have several preambles according to what I'm going to write.. 
+> - Presentations
+> - Articles
+> - Books..
+> with specific packages and macros..
+> If they can work as the  Insert/Tool/Code
+> function would be really useful.
+> 
+
+I am tedious with my templates too ;)
+I will implement this feature after coding the brace finder.
+
+> 
+> And of course ..
+> thank you for this so cool software :)
+> 
+
+Thank you very much for you trying and kind words.
+
+Regards,
+
+kyanh
+
+PS:
+1/ there's already winefish 1.3.2.6(c,d)
+(fix a major Bug in 1.3.2.6(b))
+The (c) is more stable than (d). Feel free to test it:
+
+http://developer.berlios.de/project/filelist.php?group_id=4105
+
+
+2/ 1.3.2.6(*) are development releses.
+
+
+
+From michele.mattioni at poste.it  Sun Jan 29 11:58:32 2006
+From: michele.mattioni at poste.it (Michele)
+Date: Sun, 29 Jan 2006 11:58:32 +0100
+Subject: [Winefish-users] Re: [Winefish-users] Winefish 1.3.2.6(b)
+	released
+In-Reply-To: <20060129031901.B544816C005@rekin13.go2.pl>
+References: <20060126144314.2AFAC4BE3B@rekin16.go2.pl>
+	 <1138473241.8306.22.camel@localhost>
+	 <20060129031901.B544816C005@rekin13.go2.pl>
+Message-ID: <1138532312.8161.15.camel@localhost>
+
+Il giorno dom, 29/01/2006 alle 04.19 +0100, kyanh at o2.pl ha scritto:
+
+> I am sorry that I donot understanding what you mean.
+> Could you more specify? The TeX filter will ingore
+> all LaTeX command (started by the \backslash)
+> when checking. *NOTE* that TeX filter is a Winefish's
+> function, not a aspell's one.THIS MEANS THAT you must
+> run the spell checker from Winefish (menu Document/)
+> to enjoy the filter ;)
+
+
+I'm sorry I've misunderstood.
+I 've thoughts that you would use the aspell program in pipe or with the
+api.
+
+So I tried it inside winefish [From Document/Spell Checking ] and
+outside [from the console]
+
+Well just from inside winefish, I'll try to describe specifically my
+problem:
+
+with the italian language the filter works well :
+-Recognise most of the LaTeX commands, although complain for the command
+with the [] .. example:
+
+\usepackage[utf8]{inputenc}
+
+Want to correct the [utf8] part.
+
+With the en dictionary instead the filters doesn't work and doesn't
+recognise all the LaTeX command.
+I don't know why.
+Any hint?
+
+> Currently i develope the 1.3.2 families which contains
+> the most important features is brace finder. You request
+> will be listed in TODO ;)
+
+thank you.
+> > 
+> > 
+> > > * stuffs:
+> > > - added Menu External/Soft Clean
+> > > 
+> 
+> > Would be also useful to store somewhere some user preambles:
+> > I have several preambles according to what I'm going to write.. 
+> > - Presentations
+> > - Articles
+> > - Books..
+> > with specific packages and macros..
+> > If they can work as the  Insert/Tool/Code
+> > function would be really useful.
+> > 
+> 
+> I am tedious with my templates too ;)
+> I will implement this feature after coding the brace finder.
+
+Well done :)..
+
+> PS:
+> 1/ there's already winefish 1.3.2.6(c,d)
+> (fix a major Bug in 1.3.2.6(b))
+> The (c) is more stable than (d). Feel free to test it:
+> 
+> http://developer.berlios.de/project/filelist.php?group_id=4105
+> 
+
+Ok just give it a chance right now (to the c version).
+
+> 
+> 2/ 1.3.2.6(*) are development releses.
+> 
+
+I'm a beta-tester ... 
+I live on the edge :)
+
+and winefish is to cool to be stuck with the stable version :)
+
+Regards,
+Michele.
+
+
+
+
+
+From kyanh at o2.pl  Mon Jan 30 02:46:57 2006
+From: kyanh at o2.pl (kyanh at o2.pl)
+Date: Mon, 30 Jan 2006 02:46:57 +0100
+Subject: [Winefish-users] =?iso-8859-2?Q?About_brace_finder...?=
+Message-ID: <20060130014657.9E77D12885C@rekin23.go2.pl>
+
+Hi all,
+
+I have sent a newletter... but I forgot the most important thing:
+
+to start the brace finder, press
+
+Control ] (backward)
+Control [ (forward)
+
+Menu items: Edit/Find, Replace/Brace Finder  *
+
+Sorry and thank you.
+
+kyanh
+
+
+
+From kyanh at o2.pl  Tue Jan 31 00:44:22 2006
+From: kyanh at o2.pl (kyanh at o2.pl)
+Date: Tue, 31 Jan 2006 00:44:22 +0100
+Subject: [Winefish-users] =?iso-8859-2?Q?test_new_configure._please_ingore?=
+Message-ID: <20060130234422.97E9D1C4023@rekin15.go2.pl>
+
+xxxx
+
+
+
+From kyanh at o2.pl  Tue Jan 31 00:47:26 2006
+From: kyanh at o2.pl (kyanh at o2.pl)
+Date: Tue, 31 Jan 2006 00:47:26 +0100
+Subject: [Winefish-users] =?iso-8859-2?Q?Re:_[Winefish-users]_test_new_configure._please_in?=
+ =?iso-8859-2?Q?gore?=
+In-Reply-To: <20060130234422.97E9D1C4023@rekin15.go2.pl>
+References: <20060130234422.97E9D1C4023@rekin15.go2.pl>
+Message-ID: <20060130234726.963AC1C400E@rekin15.go2.pl>
+
+Repl to list: works fine now!
+
+
+
+From kyanh at o2.pl  Tue Jan 31 00:49:23 2006
+From: kyanh at o2.pl (kyanh at o2.pl)
+Date: Tue, 31 Jan 2006 00:49:23 +0100
+Subject: [Winefish-users] =?iso-8859-2?Q?Re:_[Winefish-users]_Re:_[Winefish-users]_test_new?=
+ =?iso-8859-2?Q?_configure._please_in_gore?=
+In-Reply-To: <20060130234726.963AC1C400E@rekin15.go2.pl>
+References: <20060130234422.97E9D1C4023@rekin15.go2.pl> 
+	<20060130234726.963AC1C400E@rekin15.go2.pl>
+Message-ID: <20060130234923.52EE11C400E@rekin15.go2.pl>
+
+continue testing
+
+
+

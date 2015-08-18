@@ -1,0 +1,75 @@
+From kyanh at viettug.org  Tue Nov  1 00:02:11 2011
+From: kyanh at viettug.org (Anh K. Huynh)
+Date: Tue, 1 Nov 2011 06:02:11 +0700
+Subject: [Winefish-users] Further winefish hosting?
+In-Reply-To: <4EAF1385.9060502@t-online.de>
+References: <4E9C338C.7020906@t-online.de>
+	<20111018071254.5ca72f91@viettug.org>
+	<4E9DB645.2000901@t-online.de> <4EAF1385.9060502@t-online.de>
+Message-ID: <20111101060211.45b3dfd5@viettug.org>
+
+On Mon, 31 Oct 2011 22:30:45 +0100
+Stefan Husmann <stefan-husmann at t-online.de> wrote:
+
+> ...
+> >
+> Good news. It seems that berlios will be kept alive by a new
+> noncommercial club/association.
+
+Maybe... Yesterday I saw some messages in Berlios's developer pages; the
+messages are in German (google translate didn't help.) I don't think
+people would help if they are trying in German only :P
+
+I am moving some materials from Berlios server to my laptop. The bad
+news (and the only one, I hope) is that I lost the database (or I
+can't connect to it) for the very old forum. There isn't any very
+important thing there, but I don't want to lost something from Winefish
+friends. I asked Berlios administrator, but I haven't received any
+answer yet.)
+
+Our plan:
+
+* Move materials away Berlios hosting (in progress)
+* Archive two lists (-users and -devel)
+* (Nov 6th - 15th) Send official announcements, close the lists,
+  redirect the homepage to new location
+
+We will have at least one month before Dec 31th.
+
+Feel free to comments.
+
+Regards,
+
+-- 
+Anh Ky Huynh @ ICT
+Registered Linux User #392115
+
+
+From kyanh at viettug.org  Fri Nov  4 01:26:44 2011
+From: kyanh at viettug.org (Anh K. Huynh)
+Date: Fri, 4 Nov 2011 07:26:44 +0700
+Subject: [Winefish-users] Further winefish hosting?
+In-Reply-To: <4EAF1385.9060502@t-online.de>
+References: <4E9C338C.7020906@t-online.de>
+	<20111018071254.5ca72f91@viettug.org>
+	<4E9DB645.2000901@t-online.de> <4EAF1385.9060502@t-online.de>
+Message-ID: <20111104072644.56c0b8ac@viettug.org>
+
+On Mon, 31 Oct 2011 22:30:45 +0100
+Stefan Husmann <stefan-husmann at t-online.de> wrote:
+
+> ..
+> Good news. It seems that berlios will be kept alive by a new
+> noncommercial club/association.
+
+Is this really the good news
+	http://developer.berlios.de/forum/forum.php?forum_id=37533
+?
+
+Regards,
+
+-- 
+Anh Ky Huynh @ ICT
+Registered Linux User #392115
+
+
